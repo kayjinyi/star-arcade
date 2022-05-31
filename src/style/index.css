@@ -1,0 +1,24 @@
+:root {
+    --darkmain: #2274A5;
+    --lightmain: #12263A;
+    --lightmainalt: #545C52;
+    --whiteaccent: #F5EFED;
+    --darkaccent: #5A1807;
+    --darkaccentalt: #7B2D26;
+    --lightaccent: #D98324;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: large;
+}
+
+.btn {
+    border: 5px solid var(--lightaccent);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 var(--darkaccent);
+    padding: 5px;
+    color: var(--whiteaccent);
+    background-color: var(--lightaccent);
+}

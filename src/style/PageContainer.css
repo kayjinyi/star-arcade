@@ -1,0 +1,16 @@
+.PageContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    gap: 1.5em;
+}
+
+.PageContainer .Menu {
+    width: 20%;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
