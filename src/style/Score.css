@@ -2,7 +2,7 @@
     border: 10px solid var(--lightaccent);
     border-radius: 10px;
     box-shadow: 4px 4px 10px 0 var(--darkaccent);
-    background-color: var(--darkmain);
+    background-color: var(--lightmain);
     width: 100%;
     min-height: fit-content;
     height: 40%;
