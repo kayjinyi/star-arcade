@@ -96,11 +96,11 @@ This project was completed as a collaborative group for Project 3 from the Unive
 # Contact
 
 If you have any questions feel free to contact our team:
-- Ester E. Kim | [Github](https://github.com/kimester) | [email]()
-- Minhkhoi Nguyen| [Github](https://github.com/minhkhoinguy) | [email]()
-- Nolan Frame | [Github](https://github.com/framenolan) | [email]()
-- Surbhi Arora | [Github](https://github.com/Surbhiarora3) | [email]()
-- Yi Jin | [Github](https://github.com/kayjinyi) | [email]()
+- Ester E. Kim | [Github](https://github.com/kimester) | [email](mailto:kimester1996@gmail.com)
+- Minhkhoi Nguyen| [Github](https://github.com/minhkhoinguy) | [email](mailto:minhkhoinguy@gmail.com)
+- Nolan Frame | [Github](https://github.com/framenolan) | [email](mailto:frame.nolan@gmail.com)
+- Surbhi Arora | [Github](https://github.com/Surbhiarora3) | [email](mailto:arora.surbhi4@gmail.com)
+- Yi Jin | [Github](https://github.com/kayjinyi) | [email](mailto:kayjinyi@gmail.com)
 
 &nbsp;
 
