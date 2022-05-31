@@ -3,12 +3,13 @@ import Navigation from './components/Navigation';
 import PageContainer from './components/PageContainer';
 import About from './components/pages/About';
 import Leaderboard from './components/pages/Leaderboard';
+import Home from './components/pages/Home';
 
 function App() {
   return (
     <div className="App">
       <Navigation/>
-      <PageContainer/>
+      <Home/>
       <About/>
       <Leaderboard/>
     </div>

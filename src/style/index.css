@@ -1,10 +1,9 @@
 :root {
-    --darkmain: #2274A5;
-    --lightmain: #12263A;
-    --lightmainalt: #545C52;
+    --darkmain: #12263A;
+    --lightmain: #1C6087;
+    --pagebackground: #8ACDEA;
     --whiteaccent: #F5EFED;
     --darkaccent: #5A1807;
-    --darkaccentalt: #7B2D26;
     --lightaccent: #D98324;
 }
 
@@ -12,6 +11,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: large;
+    background-color: var(--pagebackground);
 }
 
 .btn {
@@ -21,4 +21,8 @@ body {
     padding: 5px;
     color: var(--whiteaccent);
     background-color: var(--lightaccent);
+}
+
+@media screen and (max-width: 480px){
+    
 }

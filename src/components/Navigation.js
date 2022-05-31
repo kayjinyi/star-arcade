@@ -5,7 +5,7 @@ function Navigation() {
 
     return (
         <nav className="Navigation">
-            <h1>Cattle Drive</h1>
+            <h1>Arcade</h1>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/leaderboard">Leaderboard</a></li>
