@@ -1,9 +1,16 @@
 import generateAnimations from './animations/index'
 import Player from './objects/Player'
+import { showScore } from './ui/score'
+import { hidePressToPlay, hideGameOver } from './ui/gameState'
 
 class Dino extends Phaser.Scene {
   constructor() {
     super("Dino");
+    this.state = {
+      started: false,
+      gameOver: false,
+      UIUpdated: false
+  };
   }
 
   preload() {
@@ -32,7 +39,27 @@ class Dino extends Phaser.Scene {
   update(time, delta) {
     // This is where we will update the game state
     this.player.update(this.inputs);
+    //Check if the game has been started, or if the game is over
+    if (this.inputs.space.isDown && !this.state.started && !this.state.gameOver) {
+      this.state.started = true;
   }
+
+  if (this.state.started) {
+      this.player.update(this.inputs);
+      if (!this.state.UIUpdated) {
+        this.updateUI();
+    }
+  }
+  }
+
+  updateUI() {
+    hidePressToPlay();
+    hideGameOver();
+
+    showScore();
+
+    this.state.UIUpdated = true;
+}
 }
 
 export default Dino;
