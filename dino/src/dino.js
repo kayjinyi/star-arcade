@@ -18,17 +18,20 @@ class Dino extends Phaser.Scene {
     this.load.on('complete', () => {
         generateAnimations(this);
     });
-    //Add Player(Dino)
-    this.player = new Player(this, 25, 460);
   }
 
   create() {
     // This is where we will create our game objects
+
+    //Add Player(Dino)
+    this.player = new Player(this, 25, 460);
+    // set up input
+    this.inputs = this.input.keyboard.createCursorKeys();
   }
 
   update(time, delta) {
     // This is where we will update the game state
-    this.player.sprite.play('run', true);
+    this.player.update(this.inputs);
   }
 }
 
