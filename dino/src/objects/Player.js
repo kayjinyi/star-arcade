@@ -1,5 +1,7 @@
+import { updateScore } from '../ui/score'
 class Player {
     constructor(scene, x, y) {
+        
         this.scene = scene;
         this.sprite = scene.physics.add.sprite(x, y, 'atlas')
             .setScale(2)
@@ -7,10 +9,14 @@ class Player {
             .setCollideWorldBounds();
         //This will check if the Dino has died
         this.isDead = false;
+        //This for updating Score
+        this.scene = scene;
+        this.timer = 0;
         return this;
     }
 
-    update(input) {
+    update(input, delta) {
+        
         // Allow movements if the Dino is still alive. If the Dino is alive, and is on the floor, using body.onFloor
         if (!this.isDead && this.sprite.body.onFloor()) {
             this.sprite.play('run', true);
@@ -19,6 +25,12 @@ class Player {
         if ((input.space.isDown && this.sprite.body.onFloor())) {
             this.sprite.setVelocityY(-500);
             this.sprite.play('idle', true);
+        }
+        //Increase timer with delta
+        this.timer += delta;
+        if (this.timer > 100) {
+            this.timer = 0;
+            updateScore(this.scene.state);
         }
     }
 }
