@@ -28,7 +28,7 @@ class Player {
         }
         //Increase timer with delta
         this.timer += delta;
-        if (this.timer > 100) {
+        if (this.timer > 100/ this.scene.state.speed) {
             this.timer = 0;
             updateScore(this.scene.state);
         }

@@ -17,7 +17,9 @@ class Dino extends Phaser.Scene {
       cactuses: [],
       // The distance in seconds between two cactuses
       cactusDistance: 2000,
+      speed: 1,
       timer: {
+        speedLoop: 0,
         // A timer to keep track of the time of last spawn
         cactusSpawnLoop: 0,
       },
@@ -55,6 +57,8 @@ class Dino extends Phaser.Scene {
 
   update(time, delta) {
     // This is where we will update the game state
+    this.state.timer.speedLoop += delta;
+    this.state.timer.cactusSpawnLoop += delta;
     this.player.update(this.inputs);
     //Check if the game has been started, or if the game is over
     if (
@@ -64,7 +68,7 @@ class Dino extends Phaser.Scene {
     ) {
       this.state.started = true;
     }
-    this.state.timer.cactusSpawnLoop += delta;
+    
     if (this.state.started) {
       this.player.update(this.inputs);
       if (!this.state.UIUpdated) {
@@ -72,10 +76,17 @@ class Dino extends Phaser.Scene {
       }
       if (this.state.timer.cactusSpawnLoop > this.state.cactusDistance) {
         //using Phaser.Math.Between to randomly increase/decrease the distance from the next cactus
-        this.state.cactusDistance = Phaser.Math.Between(5000, 1000);
+        this.state.cactusDistance = Phaser.Math.Between(5000 / this.state.speed, 1000 / this.state.speed);
         this.state.cactuses.push(new Cactus(this));
         this.state.timer.cactusSpawnLoop = 0;
       }
+      //state.speed will hold the current speed of the game
+      //state.timer.speedLoop will keep track of time to increase the speed by a fraction every 10 seconds
+      if (this.state.timer.speedLoop > 10000) {
+        this.state.timer.speedLoop = 0;
+        this.state.speed += .25;
+        }
+
     }
   }
 
