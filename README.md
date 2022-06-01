@@ -1,38 +1,41 @@
-# cool-game
+# Project 3: Cool Game
 
-
+## Badge
 ![Badge](https://img.shields.io/badge/license-MIT-blue)
 
----
+## Title
+Cool Game
 
-
-# Table of Contents
-
-  - [Description](#description)
+## Table of Contents
+  - [Title](#title)
+  - [Badge](#badge)
+  - [Title](#title-1)
   - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Technologies Used](#technologies-used)
-  - [Demo](#demo)
-  - [Screenshots](#screenshots)
-  - [Contributing](#contributing)
-  - [Contact](#contact)
+  - [User Story](#user-story)
+  - [Description](#description)
+  - [Mock-Up](#mock-up)
+  - [Tech](#tech)
   - [License](#license)
+  - [Link](#link)
+  - [Contact](#contact)
 
-&nbsp;
+## User Story
+```
+As 
+I WANT 
+```
 
----
-# Description
+## Description
+```
+WHEN 
+THEN
+```
+## Mock-Up
+The following image shows the web application's appearance:
 
-Welcome to the 
+<img src="./assets/">
 
-
-Check out our deployed project [here](https://herokuapp.com/)! 
-&nbsp;
-
----
-
-# Installation
+## Installation
 
 Instructions: 
 1. Fork the application repository from GitHub and clone this project to your machine.
@@ -40,91 +43,46 @@ Instructions:
 3. Prerequisite installations: Node.js, MySQL.
 4. This project includes a `package.json` file that specifies dependencies for this project, which can be installed by running the command `"npm install"`.
 
-&nbsp;
-
----
-# Usage
-
-Once the project has been installed:
-
-&nbsp;
-
----
-# Technologies Used
-
+## Tech
 General Technologies: 
-- [HTML](https://html.com/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [Javascript](https://www.javascript.com/)
-- [Node](https://www.npmjs.com/package/node)
-- [Heroku](https://www.heroku.com/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+- [Heroku](https://dashboard.heroku.com/)
 - [BootStrap](https://getuikit.com/)
-
-
-
+- [Node.js](https://nodejs.org/en/)
+- 
 NPM Packages
-- [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
-- [express-handlebars](https://www.npmjs.com/package/express-handlebars)
-- [express-session](https://www.npmjs.com/package/express-session)
-- [nodemon](https://www.npmjs.com/package/nodemon) 
-- [Express](https://www.npmjs.com/package/express)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [MySQL2](https://www.npmjs.com/package/mysql)
-- [Sequelize](https://www.npmjs.com/package/sequelize)
+- [Express.js](https://expressjs.com/)
+- [Sequelize](https://sequelize.org/)
+- [MySQL2](https://www.npmjs.com/package/mysql2)
+- [Nodemon](https://www.npmjs.com/package/nodemon) 
+- [Socket.io](https://momentjs.com/)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
-
-&nbsp;
-
----
-# Demo
+- [Env Var](https://www.npmjs.com/package/env-var)
 
 
-&nbsp;
+## License
+[MIT License](LICENSE)
 
----
-# Contributing
+## Link
+[Github Repo](https://github.com/kayjinyi/cool-game)
+
+[Deploy](https://)
+
+## Contributing
 
 This project was completed as a collaborative group for Project 3 from the University of Washington Web Development Bootcamp. If you would like to contribute, please feel free to contact any of the team members with questions or comments.
 
-&nbsp;
+## Contact
+Contact us with the link below if you have any questions!
 
----
-# Credits
+[Ester E. Kim](https://github.com/kimester)
 
+[Minhkhoi Nguyen](https://github.com/minhkhoinguy)
 
----
-# Contact
+[Nolan Frame](https://github.com/framenolan)
 
-If you have any questions feel free to contact our team:
-- Ester E. Kim | [Github](https://github.com/kimester) | [email](mailto:kimester1996@gmail.com)
-- Minhkhoi Nguyen| [Github](https://github.com/minhkhoinguy) | [email](mailto:minhkhoinguy@gmail.com)
-- Nolan Frame | [Github](https://github.com/framenolan) | [email](mailto:frame.nolan@gmail.com)
-- Surbhi Arora | [Github](https://github.com/Surbhiarora3) | [email](mailto:arora.surbhi4@gmail.com)
-- Yi Jin | [Github](https://github.com/kayjinyi) | [email](mailto:kayjinyi@gmail.com)
+[Surbhi Arora](https://github.com/Surbhiarora3)
 
-&nbsp;
-
----
-## License
-
-[MIT License](./LICENSE) 
-
-Copyright (c) 2022
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[Yi Jin](https://github.com/kayjinyi)
