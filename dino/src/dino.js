@@ -3,6 +3,7 @@ import Player from "./objects/Player";
 import { showScore } from "./ui/score";
 import { hidePressToPlay, hideGameOver } from "./ui/gameState";
 import Star from "./objects/Star";
+import Cactus from "./objects/Cactus";
 
 class Dino extends Phaser.Scene {
   constructor() {
@@ -12,6 +13,14 @@ class Dino extends Phaser.Scene {
       gameOver: false,
       UIUpdated: false,
       numberOfStars: 3,
+      // An array to hold the cactuses
+      cactuses: [],
+      // The distance in seconds between two cactuses
+      cactusDistance: 2000,
+      timer: {
+        // A timer to keep track of the time of last spawn
+        cactusSpawnLoop: 0,
+      },
     };
   }
 
@@ -53,11 +62,17 @@ class Dino extends Phaser.Scene {
     ) {
       this.state.started = true;
     }
-
+    this.state.timer.cactusSpawnLoop += delta;
     if (this.state.started) {
       this.player.update(this.inputs);
       if (!this.state.UIUpdated) {
         this.updateUI();
+      }
+      if (this.state.timer.cactusSpawnLoop > this.state.cactusDistance) {
+        //using Phaser.Math.Between to randomly increase/decrease the distance from the next cactus
+        this.state.cactusDistance = Phaser.Math.Between(5000, 1000);
+        this.state.cactuses.push(new Cactus(this));
+        this.state.timer.cactusSpawnLoop = 0;
       }
     }
   }
