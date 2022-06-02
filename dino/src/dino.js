@@ -23,8 +23,9 @@ class Dino extends Phaser.Scene {
         // A timer to keep track of the time of last spawn
         cactusSpawnLoop: 0,
       },
-      //update the score
-      score: 0
+      //update the score and highScore
+      score: 0,
+      highScore: 0
     };
   }
 
