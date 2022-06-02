@@ -11,11 +11,19 @@ class Cactus {
         this.sprite.body.customBoundsRectangle.left = -100;
         this.sprite.body.customBoundsRectangle.right = 740;
         this.update();
+        // add a collider between dino and obstacle
+        this.collider = scene.physics.add.collider(scene.player.sprite, this.sprite, this.gameOver, null, this);
     }
     update() {
         //this is animation.Move Cactus(not Dino) from the right all the way to the left
         this.sprite.setVelocityX(-150);
     }
+    gameOver() {
+        this.scene.player.die();
+    }
+}
+function stop () {
+    this.sprite.setVelocityX(0);
 }
 
 export default Cactus;

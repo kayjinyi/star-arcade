@@ -86,8 +86,10 @@ class Dino extends Phaser.Scene {
         this.state.timer.speedLoop = 0;
         this.state.speed += .25;
         }
-
     }
+    if (this.state.gameOver) {
+      this.state.cactuses.forEach(cactus => cactus.stop());
+  }
   }
 
   updateUI() {
