@@ -1,5 +1,6 @@
 import React from "react";
 import '../style/Navigation.css'
+import { Link } from "react-router-dom";
 
 function Navigation() {
 
@@ -7,9 +8,9 @@ function Navigation() {
         <nav className="Navigation">
             <h1>Arcade</h1>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/leaderboard">Leaderboard</a></li>
-                <li><a href="/about">About Us</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/leaderboard">Leaderboard</Link></li>
+                <li><Link to="/about">About Us</Link></li>
             </ul>
         </nav>
     )

@@ -1,0 +1,33 @@
+.Gameover {
+    background-color: var(--darkmain);
+    border: 10px solid var(--lightaccent);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0 var(--darkaccent);
+    width: 70%;
+    min-width: 500px;
+    height: 60vh;
+    min-height: 500px;
+    margin-left: 2em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Gameover h2 {
+    color: var(--lightaccent);
+    
+}
+
+.Gameover .Result {
+    background-color: var(--lightaccent);
+    border: 5px solid var(--lightaccent);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 var(--darkaccent);
+    padding: 5px;
+    color: var(--whiteaccent);
+    background-color: var(--lightaccent);
+    width: 30%;
+    text-align: center;
+}
