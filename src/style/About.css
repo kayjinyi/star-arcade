@@ -16,6 +16,20 @@
     padding: 1em;
 }
 
+.About .Credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.About .Avatars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
 .About h2 {
 
 }

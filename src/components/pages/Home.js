@@ -2,10 +2,9 @@ import React from 'react';
 import PageContainer from '../PageContainer';
 
 function Home() {
-    
-    return (
-        <PageContainer/>
-    )
+
+    return <PageContainer/>
+
 }
 
 export default Home;
