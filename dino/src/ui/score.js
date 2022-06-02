@@ -16,3 +16,8 @@ export const updateScore = state => {
     //Use padStart to prefix the current score with the necessary number of zeroes.
     score.current.innerText = (currentScore + 1).toString().padStart(6, '0');
 };
+//Set to the current score
+export const setHighScore = state => {
+    state.highScore = state.score;
+    score.best.innerText = `HI ${state.score.toString().padStart(6, '0')}`;
+};
