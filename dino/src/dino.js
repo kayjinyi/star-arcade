@@ -23,8 +23,9 @@ class Dino extends Phaser.Scene {
         // A timer to keep track of the time of last spawn
         cactusSpawnLoop: 0,
       },
-      //update the score
-      score: 0
+      //update the score and highScore
+      score: 0,
+      highScore: 0,
     };
   }
 
@@ -68,7 +69,7 @@ class Dino extends Phaser.Scene {
     ) {
       this.state.started = true;
     }
-    
+
     if (this.state.started) {
       this.player.update(this.inputs);
       if (!this.state.UIUpdated) {
@@ -76,7 +77,10 @@ class Dino extends Phaser.Scene {
       }
       if (this.state.timer.cactusSpawnLoop > this.state.cactusDistance) {
         //using Phaser.Math.Between to randomly increase/decrease the distance from the next cactus
-        this.state.cactusDistance = Phaser.Math.Between(5000 / this.state.speed, 1000 / this.state.speed);
+        this.state.cactusDistance = Phaser.Math.Between(
+          5000 / this.state.speed,
+          1000 / this.state.speed
+        );
         this.state.cactuses.push(new Cactus(this));
         this.state.timer.cactusSpawnLoop = 0;
       }
@@ -84,9 +88,15 @@ class Dino extends Phaser.Scene {
       //state.timer.speedLoop will keep track of time to increase the speed by a fraction every 10 seconds
       if (this.state.timer.speedLoop > 10000) {
         this.state.timer.speedLoop = 0;
-        this.state.speed += .25;
-        }
-
+        this.state.speed += 0.25;
+      }
+    }
+    if (this.state.gameOver) {
+      this.state.cactuses.forEach((cactus) => cactus.stop());
+    }
+    //When gameOver then Restart
+    if (this.inputs.space.isDown && this.state.gameOver) {
+      this.restartGame();
     }
   }
 
@@ -98,6 +108,21 @@ class Dino extends Phaser.Scene {
 
     this.state.UIUpdated = true;
   }
+}
+function restartGame() {
+  // Hide the "Game Over" text and reset the score
+  hideGameOver();
+  resetScore(this.state);
+
+  this.state.started = true;
+  this.state.gameOver = false;
+  // Reset the speed
+  this.state.speed = 1;
+  // Using sprite.destroy to remove old obstacle
+  this.state.cactuses.forEach(cactus => cactus.sprite.destroy());
+  this.state.cactuses = [];
+  // Reset the isDead state
+  this.player.isDead = false;
 }
 
 export default Dino;
