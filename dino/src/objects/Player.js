@@ -1,4 +1,16 @@
-import { updateScore } from '../ui/score'
+import { updateScore, showHighScore  } from '../ui/score'
+
+function die() {
+    this.isDead = true;
+    this.sprite.play('idle', true);
+
+    this.scene.state.started = false;
+    this.scene.state.gameOver = true;
+
+    showHighScore();
+    showGameOver();
+}
+
 class Player {
     constructor(scene, x, y) {
         
@@ -34,5 +46,7 @@ class Player {
         }
     }
 }
+
+
 
 export default Player;
