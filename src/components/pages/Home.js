@@ -3,7 +3,6 @@ import PageContainer from '../PageContainer';
 import Match from '../Match'
 
 function Home() {
-    
     return (
         <div>
             <PageContainer/>
