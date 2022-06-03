@@ -1,10 +1,14 @@
 import React from 'react';
 import PageContainer from '../PageContainer';
+import Match from '../Match'
 
 function Home() {
     
     return (
-        <PageContainer/>
+        <div>
+            <PageContainer/>
+            <Match/>
+        </div>
     )
 }
 
