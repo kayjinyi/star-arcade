@@ -1,10 +1,14 @@
 import React from 'react';
 import PageContainer from '../PageContainer';
+import Match from '../Match'
 
 function Home() {
-
-    return <PageContainer/>
-
+    return (
+        <div>
+            <PageContainer/>
+            <Match/>
+        </div>
+    )
 }
 
 export default Home;

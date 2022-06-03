@@ -1,14 +1,21 @@
-import './style/App.css';
 import Navigation from './components/Navigation';
 import About from './components/pages/About';
 import Leaderboard from './components/pages/Leaderboard';
 import Home from './components/pages/Home';
+
+
+import './style/App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
   return (
     <div className="App">
+      <Navigation/>
+      <Home/>
+      <About/>
+      <Leaderboard/>
+
       <BrowserRouter>
           <Navigation />
         <Routes>
@@ -17,6 +24,7 @@ function App() {
           <Route path="/leaderboard" element={<Leaderboard />} />
         </Routes>
       </BrowserRouter>
+
 
     </div>
   );
