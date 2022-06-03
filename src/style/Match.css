@@ -19,9 +19,9 @@
     margin: 40px auto;
     font-size: 1.5em;
     text-align: center;
-    /* background: url('../../public/img/matchbackground.jpg') center/cover; */
+    background: url('../../public/img/matchbackground.jpg') center/cover;
     /* background: url('https://birchtree.nyc3.digitaloceanspaces.com/images/wwdc18/dev-orange.png') center/cover; */
-    background: url('https://cdn.mos.cms.futurecdn.net/o3DJpNp5sxxkmXAVULpRUf.jpg') center/cover;
+    /* background: url('https://cdn.mos.cms.futurecdn.net/o3DJpNp5sxxkmXAVULpRUf.jpg') center/cover; */
     border: 10px solid black;
     color: #fff;
 }

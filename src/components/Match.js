@@ -2,37 +2,36 @@ import React, { useEffect, useState } from "react";
 import "../style/Match.css";
 import SinggleCard from "./SinggleCard";
 
+const cardImages = [
+  { src: "../../img/match1.png" },
+  { src: "../../img/match2.png" },
+  { src: "../../img/match3.png" },
+  { src: "../../img/match4.png" },
+  { src: "../../img/match5.png" },
+  { src: "../../img/match6.png" },
+  { src: "../../img/match7.png" },
+  { src: "../../img/match8.jpg" },
+  { src: "../../img/match9.jpg" },
+  { src: "../../img/match10.png" },
+  { src: "../../img/match11.png" },
+  { src: "../../img/match12.png" },
+];
+
 // const cardImages = [
-//   { src: "../../img/match1.png" },
-//   { src: "../../img/match2.png" },
-//   { src: "../../img/match3.png" },
-//   { src: "../../img/match4.png" },
-//   { src: "../../img/match5.png" },
-//   { src: "../../img/match6.png" },
-//   { src: "../../img/match7.png" },
-//   { src: "../../img/match8.jpg" },
-//   { src: "../../img/match9.jpg" },
-//   { src: "../../img/match10.png" },
-//   { src: "../../img/match11.png" },
-//   { src: "../../img/match12.png" },
+//   { src: "../../img/match13.png" },
+//   { src: "../../img/match14.png" },
+//   { src: "../../img/match15.png" },
+//   { src: "../../img/match16.png" },
+//   { src: "../../img/match17.png" },
+//   { src: "../../img/match18.png" },
+//   { src: "../../img/match19.png" },
+//   { src: "../../img/match20.png" },
+//   { src: "../../img/match21.png" },
+//   { src: "../../img/match22.png" },
+//   { src: "../../img/match23.png" },
+//   { src: "../../img/match24.png" },
   
 // ];
-
-const cardImages = [
-  { src: "../../img/match13.png" },
-  { src: "../../img/match14.png" },
-  { src: "../../img/match15.png" },
-  { src: "../../img/match16.png" },
-  { src: "../../img/match17.png" },
-  { src: "../../img/match18.png" },
-  { src: "../../img/match19.png" },
-  { src: "../../img/match20.png" },
-  { src: "../../img/match21.png" },
-  { src: "../../img/match22.png" },
-  { src: "../../img/match23.png" },
-  { src: "../../img/match24.png" },
-  
-];
 
 function Match() {
   const [cards, setCards] = useState([]);
@@ -95,7 +94,7 @@ function Match() {
 
   return (
     <div className="Match">
-      <h1>Matching</h1>
+      <h1>TechMatch</h1>
       <button id="matchBtn" onClick={shuffleCards}>
       Restart🎲
       </button>
