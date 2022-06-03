@@ -4,12 +4,26 @@ import CharacterSelect from "./CharacterSelect";
 import Game from "./Game";
 import Score from "./Score";
 import Gameover from "./Gameover";
+import Gameselect from "./Gameselect";
 
 function PageContainer() {
 
-    const gameRunning = 'over'
+    const gameState = 'new'
 
-    if (gameRunning === 'over') {
+    if (gameState === 'new') {
+        return (
+            <section className="PageContainer">
+                <Gameselect />
+                <div className="Menu">
+                    <Score />
+                    <CharacterSelect />
+                </div>
+            </section>
+        )
+
+    }
+
+    else if (gameState === 'over') {
         return (
             <section className="PageContainer">
                 <Gameover />
