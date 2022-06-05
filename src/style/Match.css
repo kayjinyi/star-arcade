@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* .Match {
-    background-color: var(--darkmain);
-    border: 10px solid var(--lightaccent);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px 0 var(--darkaccent);
-    width: 70%;
-    min-width: 500px;
-    height: 60vh;
-    min-height: 500px;
-    margin-left: 2em;
-    margin-top: 1em;
-} */
 
 .Match {
     font-family: 'Lobster', cursive;
@@ -23,10 +11,14 @@
     /* background: url('https://birchtree.nyc3.digitaloceanspaces.com/images/wwdc18/dev-orange.png') center/cover; */
     /* background: url('https://cdn.mos.cms.futurecdn.net/o3DJpNp5sxxkmXAVULpRUf.jpg') center/cover; */
     border: 10px solid black;
+    border-radius: 10px;
     color: #fff;
 }
-
-#matchBtn {
+.Match h1{
+    text-shadow: 3px 3px rgb(224, 131, 18);
+    color: aquamarine;
+}
+.matchBtn {
     background: none;
     border: 2px solid #fff;
     padding: 6px 12px;
@@ -36,10 +28,16 @@
     cursor: pointer;
     font-size: 1em;
 }
-
-#matchBtn:hover {
-    background: #c23866;
-    color: #fff;
+#howtoplayBtn:hover{
+    color: transparent;
+    background: url('../../public/img/astronaut.png')center/cover;
+    background-color: #fff;
+    transition: 1s;
+}
+#restartBtn:hover {
+    background: url('../../public/img/astronaut2.png') center/cover;
+    color: transparent;
+    transition: 1s;
 }
 
 .card-grid {
