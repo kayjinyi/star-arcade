@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Press+Start+2P&display=swap");
+.Snake {
+    text-align: center;
+}
+
+.Snake-header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    color: #27AE60;
+    text-shadow: 3px 3px #F1948A;
+
+}
+.Snake-header p {
+    font-family: 'Oleo Script', cursive;
+    font-size: 30px;
+    color: #F1948A;
+    text-shadow: 2px 2px white;
+
+}
