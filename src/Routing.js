@@ -4,6 +4,8 @@ import Leaderboard from './components/pages/Leaderboard'
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Leaderboard from './components/pages/Leaderboard'
+import Match from './components/Match'
+import Snake from './components/Snake'
 
 function Routing () {
 
@@ -13,6 +15,8 @@ function Routing () {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/leaderboard" element={<Leaderboard/>}/>
+                <Route path="/match" element={<Match/>}/>
+                <Route path="/snake" element={<Snake/>}/>
             </Routes>
         </BrowserRouter>
     )

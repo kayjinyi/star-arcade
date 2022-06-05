@@ -1,16 +1,22 @@
 import React from "react";
 import '../style/Gameselect.css'
+import { Link } from "react-router-dom";
 
 function Gameselect() {
 
     return (
         <section className="Gameselect">
-            <h2>Game Selection</h2>
-            <button className="SelectButton btn">Memory</button>
-            <button className="SelectButton btn">Flappy Bird</button>
-            <button className="SelectButton btn">Snake</button>
-            <button className="SelectButton btn">Dino Run</button>
-            <button className="SelectButton btn">Uno</button>
+            <h2>Game Station</h2>
+            <button className="SelectButton btn"><Link to="/match">TechMatch</Link>
+            </button>
+            <button className="SelectButton btn"><Link to="/snake">Snake</Link>
+            </button>
+            <button className="SelectButton btn"><Link to="/uno">Uno</Link>
+            </button>
+            <button className="SelectButton btn"><Link to="/flappyBird">Flappy Bird</Link>
+            </button>
+            <button className="SelectButton btn"><Link to="/dino">Dino Run</Link>
+            </button>
         </section>
     )
 }
