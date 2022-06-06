@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../style/Leaderboard.css";
-import { api } from "../utils/api";
+import { api } from "../../utils/api";
 import ScorePost from "../ScorePost";
 
 function Leaderboard() {
@@ -19,11 +19,11 @@ function Leaderboard() {
   }, []);
 
   const {
-    Username = '',
-    Scores = '',
+    username = '',
+    score = '',
    
   } = scores;
-  
+
   return (
     <section className="Leaderboard">
       <h2>Leaderboard</h2>
