@@ -3,7 +3,7 @@ import '../style/Board.css'
 import ArrowKeysReact from 'arrow-keys-react';
 
 const BOARD_SIZE = 30;
-const SPEED = 8;
+const SPEED = 5;
 const GAME_SIZE = 600;
 
 const DIRECTION = {
