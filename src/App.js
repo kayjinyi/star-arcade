@@ -4,6 +4,7 @@ import Leaderboard from './components/pages/Leaderboard';
 import Home from './components/pages/Home';
 import Match from './components/Match';
 import Snake from './components/Snake';
+import Flappy from './components/Flappy';
 
 
 import './style/App.css';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/match" element={<Match />} />
           <Route path="/snake" element={<Snake />} />
+          <Route path="/flappy" element={<Flappy />} />
         </Routes>
       </BrowserRouter>
 
