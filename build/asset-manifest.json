@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11474dd2.css",
+    "main.js": "/static/js/main.47b8071c.js",
+    "static/media/matchbackground.jpg": "/static/media/matchbackground.543eefd9375f55770f1e.jpg",
+    "static/media/snakebackground1.png": "/static/media/snakebackground1.fcb46b306fadce7c4bc3.png",
+    "static/media/astronaut2.png": "/static/media/astronaut2.e32518073dc116601e53.png",
+    "static/media/astronaut.png": "/static/media/astronaut.efd940c8ca88e447e361.png",
+    "static/media/a1.png": "/static/media/a1.78ac5ce8b1267bb489bf.png",
+    "static/media/a3.png": "/static/media/a3.00f98c7004ab3a2fa4bc.png",
+    "static/media/a5.png": "/static/media/a5.30720ec6a283626f2907.png",
+    "static/media/a2.png": "/static/media/a2.4afa202e89d6dfe6fad7.png",
+    "static/media/a4.png": "/static/media/a4.b0565c52366e43dffc86.png",
+    "static/media/snakecover2.png": "/static/media/snakecover2.e203c4dd598f92d10322.png",
+    "static/media/mantinia_regular.woff": "/static/media/mantinia_regular.20122101deebcc78105e.woff",
+    "static/media/mantinia_regular.woff2": "/static/media/mantinia_regular.f478eaff6345c7d53297.woff2",
+    "index.html": "/index.html",
+    "main.11474dd2.css.map": "/static/css/main.11474dd2.css.map",
+    "main.47b8071c.js.map": "/static/js/main.47b8071c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11474dd2.css",
+    "static/js/main.47b8071c.js"
+  ]
+}
