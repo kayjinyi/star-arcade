@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import '../../style/Leaderboard.css'
 
 function Leaderboard() {
