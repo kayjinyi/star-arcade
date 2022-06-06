@@ -13,6 +13,11 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+      <div className='BGAnimation' >
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      </div>
       <BrowserRouter>
           <Navigation />
         <Routes>
