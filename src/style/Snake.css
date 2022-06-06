@@ -5,14 +5,14 @@
 
 .Snake-header h1 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 50px;
+    font-size: 40px;
     color: #27AE60;
     text-shadow: 3px 3px #F1948A;
 
 }
 .Snake-header p {
     font-family: 'Oleo Script', cursive;
-    font-size: 30px;
+    font-size: 20px;
     color: #F1948A;
     text-shadow: 2px 2px white;
 
