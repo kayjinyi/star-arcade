@@ -7,15 +7,15 @@ function Gameselect() {
     return (
         <section className="Gameselect">
             <h2>Game Station</h2>
-            <button className="SelectButton btn"><Link to="/match">TechMatch</Link>
+            <button className="SelectButton"><Link to="/match" className='link'><span>TechMatch</span></Link><i></i>
             </button>
-            <button className="SelectButton btn"><Link to="/snake">Snake</Link>
+            <button className="SelectButton"><Link to="/snake" className='link'><span>Snake</span></Link><i></i>
             </button>
-            <button className="SelectButton btn"><Link to="/uno">Uno</Link>
+            <button className="SelectButton"><Link to="/uno" className='link'><span>Uno</span></Link><i></i>
             </button>
-            <button className="SelectButton btn"><Link to="/flappyBird">Flappy Bird</Link>
+            <button className="SelectButton"><Link to="/flappyBird" className='link'><span>Flappy Bird</span></Link><i></i>
             </button>
-            <button className="SelectButton btn"><Link to="/dino">Dino Run</Link>
+            <button className="SelectButton"><Link to="/dino" className='link'><span>Dino Run</span></Link><i></i>
             </button>
         </section>
     )
