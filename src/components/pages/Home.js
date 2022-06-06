@@ -1,11 +1,11 @@
 import React from 'react';
-import PageContainer from '../PageContainer';
-
+import Gameselect from '../Gameselect';
+import '../../style/Home.css'
 
 function Home() {
     return (
-        <div>
-            <PageContainer/>
+        <div className="HomePage">
+            <Gameselect/>
         </div>
     )
 }
