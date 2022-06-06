@@ -9,20 +9,25 @@ function Leaderboard() {
     try {
       const res = await api.getScores();
       const scorePosts = await res.json();
-      setScores(scorePosts);
+    //   setScores(scorePosts);
     } catch (err) {
       console.error(err);
     }
   };
   useEffect(() => {
     getScores();
-  }, []);
+  }, [] );
 
-  const {
-    username = '',
-    score = '',
+//   const {
+//     username = '',
+//     score = '',
    
-  } = scores;
+//   } = scores;
+  const newScore = [ ...scorePosts];
+    console.log(newScore);
+
+    // Call setBucket to update state with our new set of bucket list items
+    setScores(newScore);
 
   return (
     <section className="Leaderboard">
