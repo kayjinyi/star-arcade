@@ -4,7 +4,7 @@ import { api } from "../../util/api";
 import ScorePost from "../ScorePost";
 
 function Leaderboard() {
-  const [scores, setScores] = useState({});
+  const [scores, setScores] = useState([]);
   const getScores = async () => {
     try {
       const res = await api.getScores();
