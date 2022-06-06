@@ -9,6 +9,11 @@ function Leaderboard() {
     try {
       const res = await api.getScores();
       const scorePosts = await res.json();
+      const newScore = [ ...scorePosts];
+    console.log(newScore);
+
+    // Call setBucket to update state with our new set of bucket list items
+    setScores(newScore);
     //   setScores(scorePosts);
     } catch (err) {
       console.error(err);
@@ -23,11 +28,8 @@ function Leaderboard() {
 //     score = '',
    
 //   } = scores;
-  const newScore = [ ...scorePosts];
-    console.log(newScore);
 
-    // Call setBucket to update state with our new set of bucket list items
-    setScores(newScore);
+  
 
   return (
     <section className="Leaderboard">
