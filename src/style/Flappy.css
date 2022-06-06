@@ -1,0 +1,17 @@
+.Flappy {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    /* TODO: make these relative */
+    width: 75%;
+    height: 100%;
+}
+
+/* .Flappy .Bird {
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 60px;
+} */

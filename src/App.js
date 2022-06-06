@@ -4,15 +4,24 @@ import Leaderboard from './components/pages/Leaderboard';
 import Home from './components/pages/Home';
 import Match from './components/Match';
 import Snake from './components/Snake';
+import Flappy from './components/Flappy';
 
+import  { api } from "./util/api"
 
 import './style/App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
+  
+
   return (
     <div className="App">
+      <div className='BGAnimation' >
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      </div>
       <BrowserRouter>
           <Navigation />
         <Routes>
@@ -21,6 +30,7 @@ function App() {
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/match" element={<Match />} />
           <Route path="/snake" element={<Snake />} />
+          <Route path="/flappy" element={<Flappy />} />
         </Routes>
       </BrowserRouter>
 
