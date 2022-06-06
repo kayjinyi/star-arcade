@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'mantiniaregular';
+    src: url('./fonts/mantinia_regular.woff') format('woff2'),
+         url('./fonts/mantinia_regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 .About {
     background-color: var(--lightmain);
     color: var(--whiteaccent);
@@ -16,24 +24,49 @@
     padding: 1em;
 }
 
-.About .Credits {
+.Credit {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    justify-content: space-between;
+    margin: 5px;
+
 }
 
-.About .Avatars {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
+.avatarts img {
+    max-width: 200px;
+    max-height: 300px;
+    
+}
+.avatarts {
+    border: 4px inset  #c89403;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.ourName{
+    margin: 0;
+    font-family: 'mantiniaregular';
+    font-size: 30px;
+    color: #c89403;
+    text-shadow: 2px 2px black;
 }
 
 .About h2 {
-
+    font-family: 'mantiniaregular';
+    font-size: 40px;
+    color: #c89403;
+    margin-top: 0;
+    text-shadow:2px 2px black
+    ;
 }
 
-.About p {
+.AboutHeader {
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
     
+}
+
+.AboutFooter{
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+
 }
