@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../style/Leaderboard.css";
-import { api } from "../../utils/api";
+import { api } from "../../util/api";
 import ScorePost from "../ScorePost";
 
 function Leaderboard() {
@@ -38,7 +38,7 @@ function Leaderboard() {
         <tbody>
           <tr>
             {scores.map((scores) => (
-              <ScorePost scorePost={scorePost}></ScorePost>
+              <ScorePost scorePost={scores}></ScorePost>
             ))}
           </tr>
         </tbody>
