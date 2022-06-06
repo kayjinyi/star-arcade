@@ -27,6 +27,9 @@
 .card .back {
     transition: all ease-in 0.2s;
     transition-delay: 0.2s;
+    /* border: 3px solid rgba(14, 14, 14, 0.506); */
+    background: aquamarine;
+    border-radius: 50%;
 }
 .flipped .back {
     transform: rotateY(90deg);

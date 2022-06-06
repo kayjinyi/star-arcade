@@ -40,6 +40,12 @@ function Match() {
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false)
 
+//How To Play btn
+const howtoplay =() => {
+  alert("Collect all the languages and technologies below by matching the right pairs to become the Ultimate Developer!");
+
+}
+
   //shuffle cards
   const shuffleCards = () => {
     const shuffleCards = [...cardImages, ...cardImages]
@@ -95,9 +101,10 @@ function Match() {
   return (
     <div className="Match">
       <h1>TechMatch</h1>
-      <button id="matchBtn" onClick={shuffleCards}>
+      <button className="matchBtn" id='restartBtn' onClick={shuffleCards}>
       Restart🎲
       </button>
+      <button onClick={howtoplay} className="matchBtn" id='howtoplayBtn'>?</button>
 
       <div className="card-grid">
         {cards.map((card) => (

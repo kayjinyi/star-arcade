@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Press+Start+2P&display=swap");
+:root {
+    --game-width: 0px;
+}
+
+.Board {
+    height: var(--game-width);
+    width: var(--game-width);
+    border: 5px solid rgb(231, 161, 201);
+    padding: 0;
+    background: url('../../public/img/snakebackground1.png') center/cover;
+    
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+.SnakeScore{
+    /* background: rgba(14, 14, 14, 0.184); */
+    background: url('../../public/img/snakecover2.png') center/cover;
+    border: none;
+    border-radius: 10px;
+    max-height: 180px;
+}
+.SnakeScore h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ECF0F1;
+    text-shadow: 3px 3px #F1948A;
+    
+}
+
+.SnakeScore p {
+    font-family: 'Press Start 2P', cursive;
+
+}
+.SankeRSbtn {
+    background: salmon;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Abril Fatface', cursive;
+}
+.SankeRSbtn:hover{
+    color: salmon;
+    background: #82E0AA;
+    border: 2px solid salmon;
+    transition: 1s;
+}
