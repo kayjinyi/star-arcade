@@ -13,9 +13,9 @@ function Gameselect() {
             </button>
             <button className="SelectButton"><Link to="/uno" className='link'><span>Uno</span></Link><i></i>
             </button>
-            <button className="SelectButton"><Link to="/flappyBird" className='link'><span>Flappy Bird</span></Link><i></i>
+            <button className="SelectButton"><Link to="/flappy" className='link'><span>Flappy Bird</span></Link><i></i>
             </button>
-            <button className="SelectButton"><Link to="/dino" className='link'><span>Dino Run</span></Link><i></i>
+            <button className="SelectButton"><Link to="/dino" className='link'><span>Dino MoonJump</span></Link><i></i>
             </button>
         </section>
     )
