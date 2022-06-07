@@ -6,6 +6,11 @@ import About from './components/pages/About'
 import Leaderboard from './components/pages/Leaderboard'
 import Match from './components/Match'
 import Snake from './components/Snake'
+import Flappy from './components/Flappy'
+import Dinorun from './components/Dinorun'
+
+
+
 
 function Routing () {
 
@@ -17,6 +22,9 @@ function Routing () {
                 <Route path="/leaderboard" element={<Leaderboard/>}/>
                 <Route path="/match" element={<Match/>}/>
                 <Route path="/snake" element={<Snake/>}/>
+                <Route path="/flappy" element={<Flappy/>}/>
+                <Route path="/dino" element={<Dinorun/>}/>
+
             </Routes>
         </BrowserRouter>
     )

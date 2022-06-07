@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+.game {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid rgb(113, 16, 16);
+}
+
+.dino {
+    width: 1px;
+    height: 1px;
+     background-color: #1abc9c; 
+    box-shadow: 33px 9px 0 1px#31d65d, 36px 9px 0 1px#31d65d,
+        39px 9px 0 1px#31d65d, 42px 9px 0 1px#31d65d, 45px 9px 0 1px#31d65d,
+        30px 12px 0 1px#31d65d, 33px 12px 0 1px#31d65d, 36px 12px 0 1px#31d65d,
+        39px 12px 0 1px#31d65d, 42px 12px 0 1px#31d65d, 45px 12px 0 1px#31d65d,
+        48px 12px 0 1px#31d65d, 30px 15px 0 1px#31d65d, 33px 15px 0 1px#31d65d,
+        39px 15px 0 1px#31d65d, 42px 15px 0 1px#31d65d, 45px 15px 0 1px#31d65d,
+        48px 15px 0 1px#31d65d, 30px 18px 0 1px#31d65d, 33px 18px 0 1px#31d65d,
+        36px 18px 0 1px#31d65d, 39px 18px 0 1px#31d65d, 42px 18px 0 1px#31d65d,
+        45px 18px 0 1px#31d65d, 48px 18px 0 1px#31d65d, 6px 21px 0 1px#31d65d,
+        30px 21px 0 1px#31d65d, 33px 21px 0 1px#31d65d, 36px 21px 0 1px#31d65d,
+        39px 21px 0 1px#31d65d, 42px 21px 0 1px#31d65d, 45px 21px 0 1px#31d65d,
+        6px 24px 0 1px#31d65d, 27px 24px 0 1px#31d65d, 30px 24px 0 1px#31d65d,
+        33px 24px 0 1px#31d65d, 36px 24px 0 1px#31d65d, 6px 27px 0 1px#31d65d,
+        9px 27px 0 1px#31d65d, 24px 27px 0 1px#31d65d, 27px 27px 0 1px#31d65d,
+        30px 27px 0 1px#31d65d, 33px 27px 0 1px#31d65d, 36px 27px 0 1px#31d65d,
+        6px 30px 0 1px#31d65d, 9px 30px 0 1px#31d65d, 12px 30px 0 1px#31d65d,
+        21px 30px 0 1px#31d65d, 24px 30px 0 1px#31d65d, 27px 30px 0 1px#31d65d,
+        30px 30px 0 1px#31d65d, 33px 30px 0 1px#31d65d, 36px 30px 0 1px#31d65d,
+        39px 30px 0 1px#31d65d, 42px 30px 0 1px#31d65d, 45px 30px 0 1px#31d65d,
+        9px 33px 0 1px#31d65d, 12px 33px 0 1px#31d65d, 15px 33px 0 1px#31d65d,
+        18px 33px 0 1px#31d65d, 21px 33px 0 1px#31d65d, 24px 33px 0 1px#31d65d,
+        27px 33px 0 1px#31d65d, 30px 33px 0 1px#31d65d, 33px 33px 0 1px#31d65d,
+        36px 33px 0 1px#31d65d, 45px 33px 0 1px#31d65d, 9px 36px 0 1px#31d65d,
+        12px 36px 0 1px#31d65d, 15px 36px 0 1px#31d65d, 18px 36px 0 1px#31d65d,
+        21px 36px 0 1px#31d65d, 24px 36px 0 1px#31d65d, 27px 36px 0 1px#31d65d,
+        30px 36px 0 1px#31d65d, 33px 36px 0 1px#31d65d, 36px 36px 0 1px#31d65d,
+        12px 39px 0 1px#31d65d, 15px 39px 0 1px#31d65d, 18px 39px 0 1px#31d65d,
+        21px 39px 0 1px#31d65d, 24px 39px 0 1px#31d65d, 27px 39px 0 1px#31d65d,
+        30px 39px 0 1px#31d65d, 33px 39px 0 1px#31d65d, 12px 42px 0 1px#31d65d,
+        15px 42px 0 1px#31d65d, 18px 42px 0 1px#31d65d, 21px 42px 0 1px#31d65d,
+        24px 42px 0 1px#31d65d, 27px 42px 0 1px#31d65d, 30px 42px 0 1px#31d65d,
+        12px 45px 0 1px#31d65d, 15px 45px 0 1px#31d65d, 18px 45px 0 1px#31d65d,
+        21px 45px 0 1px#31d65d, 24px 45px 0 1px#31d65d, 27px 45px 0 1px#31d65d,
+        15px 48px 0 1px#31d65d, 18px 48px 0 1px#31d65d, 21px 48px 0 1px#31d65d,
+        24px 48px 0 1px#31d65d, 15px 51px 0 1px#31d65d, 24px 51px 0 1px#31d65d,
+        15px 54px 0 1px#31d65d, 18px 54px 0 1px#31d65d, 24px 54px 0 1px#31d65d,
+        27px 54px 0 1px#31d65d;
+        /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
+}
+
+.character {
+    position: relative;
+    width: 20px;
+    height: 55px;
+    top: 480px;
+}
+.character-animate {
+    animation-name: jump;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    0% {
+        top: 60px;
+    }
+    30% {
+        top: 20px;
+    }
+    70% {
+        top: 20px;
+    }
+    100% {
+        top: 50px;
+    }
+}
+
+.block {
+    width: 20px;
+    height: 60px;
+    background-color: #4caf50;
+    position: relative;
+    top: 535px;
+    left: 1175px;
+}
+
+.block-animate {
+    animation-name: block;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes block {
+    0% {
+        left: 800px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+
+.divider {
+    width: 25px;
+    height: auto;
+    display: inline-block;
+}
+
+.button {
+    background-color: #31d65d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.timer {
+    color: #4caf50;
+    padding-left: 5px;
+}
