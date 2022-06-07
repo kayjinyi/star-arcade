@@ -6,8 +6,10 @@ function Gameselect() {
 
     return (
         <section className="Gameselect">
-            <h2>Game Station</h2>
-            <button className="SelectButton"><Link to="/match" className='link'><span>TechMatch</span></Link><i></i>
+            <div className="station">
+                <img src={require("../Avatar/sp2.png")} id='stationTitle'/>
+            </div>
+            <div className="select"><button className="SelectButton"><Link to="/match" className='link'><span>TechMatch</span></Link><i></i>
             </button>
             <button className="SelectButton"><Link to="/snake" className='link'><span>Snake</span></Link><i></i>
             </button>
@@ -16,7 +18,8 @@ function Gameselect() {
             <button className="SelectButton"><Link to="/flappy" className='link'><span>Flappy Bird</span></Link><i></i>
             </button>
             <button className="SelectButton"><Link to="/dino" className='link'><span>Dino MoonJump</span></Link><i></i>
-            </button>
+            </button></div>
+            
         </section>
     )
 }

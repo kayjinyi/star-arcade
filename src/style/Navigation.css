@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'star_jediregular';
+    src: url('../style/fonts/starjedi-webfont.woff') format('woff2'),
+         url('../style/fonts/starjedi-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .Navigation {
     background-color: var(--darkmain);
     width: 100%;
@@ -13,9 +20,15 @@
 }
 
 .Navigation h1 {
-    color: var(--lightaccent);
+    /* color: var(--lightaccent); */
+    color: transparent;
     margin-left: 30px;
-    font-size: 40px;
+    font-size: 70px;
+    font-family: 'star_jediregular';
+    -webkit-text-stroke: 1px #fff;
+    box-shadow: 0 0 50px aqua;
+    background-color: rgba(0, 255, 255, 0.418);
+    border-radius: 50px;
 }
 
 .Navigation ul {
