@@ -19,16 +19,19 @@
     align-items: center;
 }
 
-.Navigation h1 {
+#navbarHome {
     /* color: var(--lightaccent); */
     color: transparent;
+    margin-top: 10px;
     margin-left: 30px;
+    height: 100px;
     font-size: 70px;
     font-family: 'star_jediregular';
     -webkit-text-stroke: 1px #fff;
     box-shadow: 0 0 50px aqua;
-    background-color: rgba(0, 255, 255, 0.418);
+    background: rgba(0, 255, 255, 0.418);
     border-radius: 50px;
+    text-decoration: none;
 }
 
 .Navigation ul {
@@ -40,32 +43,62 @@
     align-items: center;
 }
 
-.Navigation li {
-    border: 5px solid var(--lightaccent);
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 0 var(--darkaccent);
+#navbar1 {
+    display: flex;
+    align-items: center;
     padding: 5px;
-    color: var(--whiteaccent);
-    background-color: var(--lightaccent);
+    border-radius: 50%;
+    font-size: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    color: transparent;
+    background: url('../../public/img/planet1.gif') center/cover;
+}
+#navbar2 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    color: transparent;
+    background: url('../../public/img/blackhole.gif') center/cover;
 }
 
-.Navigation li:hover {
-    box-shadow: 3px 3px 10px 5px var(--darkaccent);
+
+#navbar3 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    color: transparent;
+
+    background: url('../../public/img/planet2.gif') center/cover
+
+}
+#navbar1:hover{
+    background: url('https://i.gifer.com/Bg2B.gif') center/cover;
+    color: transparent;
+    box-shadow: 0 0 35px aqua;
+    transition: 2s;
+}
+#navbar2:hover{
+    background: url('../../public/img/portal2.gif') center/cover;
+    color: transparent;
+    box-shadow: 0 0 35px #f000ff;
+    transition: 2s;
 }
 
-.Navigation a:link {
-    text-decoration: none;
-    color: var(--whiteaccent);
-}
-.Navigation a:visited {
-    text-decoration: none;
-    color: var(--whiteaccent);
-}
-.Navigation a:hover {
-    text-decoration: none;
-    color: var(--whiteaccent);
-}
-.Navigation a:active {
-    text-decoration: none;
-    color: var(--whiteaccent);
+#navbar3:hover{
+    background: url('../../public/img/portal3.gif') center/cover;
+    color: transparent;
+    box-shadow: 0 0 35px #FE0000;
+    transition: 2s;
 }
