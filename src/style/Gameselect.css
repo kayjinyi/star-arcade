@@ -37,8 +37,8 @@
     color: aqua;
 }
 .SelectButton {
-    width: 21%;
-    height: 80px;
+     /* width: 21%;  */
+    height: 75px;
     font-size: 18px;
     margin: 0 2em 1em 2em;
     position: relative;
@@ -48,7 +48,7 @@
     font-size: 20px;
     letter-spacing: 10px;
     font-weight: 400;
-    padding: 10px 30px;
+    padding: 20px 30px;
     transition: 0.5s;
 }
 .SelectButton:hover{
