@@ -5,6 +5,8 @@ import Game from "./dino/Game";
 import Timer from "./dino/Timer";
 import Character from "./dino/Character";
 import Block from "./dino/Block";
+
+
 function Dinorun() {
     const [animateChar, setAnimateChar] = useState(false);
     const [animateBlock, setAnimateBlock] = useState(false);
@@ -43,7 +45,7 @@ function Dinorun() {
                 setAnimateBlock(false);
                 setMessage("Play");
                 setTime(0);
-                alert("you lose!");
+                // alert("you lose!");
             }
 
             // console.log(characterTop);
