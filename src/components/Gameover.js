@@ -1,26 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/Gameover.css";
 import { api } from "../util/api";
 
-function Gameover(props) {
+function Gameover({ score }) {
   // api.createUser(props.username)
-
+  const [username, setUsername] = useState("");
   return (
     <div className="Gameover">
       <h2>Game Over</h2>
       <form className="Result">
         <input
-          value={props.username}
+          onChange={(e) => {
+            setUsername(e.target.value);
+          }}
+          value={username}
           name="username"
           type="text"
           placeholder="username"
         />
-        {/* <input
-                    value={props.score}
-                    name="score"
-                    type="display"
-                /> */}
-        <button onSubmit={api.createUser(props.username)} name="saveScore">
+
+        <button onSubmit={api.createUser({ username, score })} name="saveScore">
           Save Score
         </button>
       </form>

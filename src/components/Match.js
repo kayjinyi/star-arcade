@@ -123,7 +123,8 @@ function Match() {
       </div>
       <p>Turns: {turns}</p>
       <h2>About Us</h2>
-      <Gameover />
+      <Gameover score={turns} />
+
       <p className="AboutHeader">
         We hope you enjoyed our game! This app was developed by:
       </p>
