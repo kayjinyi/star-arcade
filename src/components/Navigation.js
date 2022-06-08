@@ -12,17 +12,17 @@ function Navigation() {
       </h1>
       <ul>
         <li>
-          <Link to="/" id="navbar1">
+          <Link to="/" id="navbar1" title="home">
             O
           </Link>
         </li>
         <li>
-          <Link to="/leaderboard" id="navbar2">
+          <Link to="/leaderboard" id="navbar2" title="leaderboard">
             O
           </Link>
         </li>
         <li>
-          <Link to="/about" id="navbar3">
+          <Link to="/about" id="navbar3" title="about">
             O
           </Link>
         </li>
