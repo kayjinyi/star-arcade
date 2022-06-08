@@ -1,10 +1,12 @@
 import React from "react";
 import "../../style/About.css";
+import Gameover from "../Gameover";
 
 function About() {
   return (
     <section className="About">
       <h2>About Us</h2>
+      <Gameover username="Nolan" score="300" />
       <p className="AboutHeader">We hope you enjoyed our game! This app was developed by:</p>
       <div className="Credit">
         <div className="avatarts">
@@ -54,6 +56,7 @@ function About() {
         </div>
       </div>
       <p className="AboutFooter">Choose a character to connect with us and get your questions answered</p>
+      
     </section>
   );
 }
