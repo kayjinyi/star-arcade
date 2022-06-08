@@ -21,14 +21,41 @@ Cool Game
 
 ## User Story
 ```
-As 
-I WANT 
+
+* As a user, I want to select games I like . 
+
+* As a user, I want to have memory games. I want to win the game when I have guessed all the pictures correct.
+
+* As a user, I want to have snake games to have fun. 
+
+* As a user, I want to see top ten scores.
+
+* As a user, I want to see whether I get to the Leaderboard.
 ```
 
 ## Description
 ```
-WHEN 
-THEN
+WHEN the users click on the homepage option
+THEN the users are taken to the homepage
+
+WHEN the users choose a game
+THEN the users are prompted to that game
+
+WHEN the users click on the start button
+THEN the user could start the game.
+
+WHEN the users finish the game
+THEN the user could input his name to get to the leaderboard.
+
+WHEN the users click on the restart the the game.
+THEN the users could start the game again.
+
+WHEN the users on any page
+THEN the users see navigation links for the homepage, about us, and leaderboard
+
+WHEN the user click on the leaderboard option in the navigation
+THEN the developers are taken to the leaderboard page and presented with existing top ten scores that include the username and the date created
+
 ```
 ## Mock-Up
 The following image shows the web application's appearance:
@@ -68,7 +95,7 @@ NPM Packages
 ## Link
 [Github Repo](https://github.com/kayjinyi/cool-game)
 
-[Deploy](https://)
+[Deploy](https://kooler-games.herokuapp.com/)
 
 ## Contributing
 
