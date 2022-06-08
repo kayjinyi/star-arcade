@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../style/Match.css";
 import SinggleCard from "./SinggleCard";
+import Gameover from "./Gameover";
 
 const cardImages = [
   { src: "../../img/match1.png" },
@@ -30,7 +31,7 @@ const cardImages = [
 //   { src: "../../img/match22.png" },
 //   { src: "../../img/match23.png" },
 //   { src: "../../img/match24.png" },
-  
+
 // ];
 
 function Match() {
@@ -38,13 +39,14 @@ function Match() {
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
-  const [disabled, setDisabled] = useState(false)
+  const [disabled, setDisabled] = useState(false);
 
-//How To Play btn
-const howtoplay =() => {
-  alert("Collect all the languages and technologies below by matching the right pairs to become the Ultimate Developer!");
-
-}
+  //How To Play btn
+  const howtoplay = () => {
+    alert(
+      "Collect all the languages and technologies below by matching the right pairs to become the Ultimate Developer!"
+    );
+  };
 
   //shuffle cards
   const shuffleCards = () => {
@@ -52,8 +54,8 @@ const howtoplay =() => {
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }));
 
-    setChoiceOne(null)
-    setChoiceTwo(null)
+    setChoiceOne(null);
+    setChoiceTwo(null);
     setCards(shuffleCards);
     setTurns(0);
   };
@@ -64,16 +66,16 @@ const howtoplay =() => {
   };
 
   //compare 2 selected cards
-  useEffect(() => {   
+  useEffect(() => {
     if (choiceOne && choiceTwo) {
-        setDisabled(true)
+      setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
         setCards((prevCards) => {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
               return { ...card, matched: true };
             } else {
-              return card
+              return card;
             }
           });
         });
@@ -91,27 +93,40 @@ const howtoplay =() => {
     setChoiceOne(null);
     setChoiceTwo(null);
     setTurns((prevTurns) => prevTurns + 1);
-    setDisabled(false)
+    setDisabled(false);
   };
   // start a new game automagically
   useEffect(() => {
-      shuffleCards()
-  }, [])
+    shuffleCards();
+  }, []);
 
   return (
     <div className="Match">
       <h1>TechMatch</h1>
-      <button className="matchBtn" id='restartBtn' onClick={shuffleCards}>
-      Restart🎲
+      <button className="matchBtn" id="restartBtn" onClick={shuffleCards}>
+        Restart🎲
       </button>
-      <button onClick={howtoplay} className="matchBtn" id='howtoplayBtn'>?</button>
+      <button onClick={howtoplay} className="matchBtn" id="howtoplayBtn">
+        ?
+      </button>
 
       <div className="card-grid">
         {cards.map((card) => (
-          <SinggleCard key={card.id} card={card} handleChoice={handleChoice} flipped={card === choiceOne || card === choiceTwo || card.matched} disabled={disabled} />
+          <SinggleCard
+            key={card.id}
+            card={card}
+            handleChoice={handleChoice}
+            flipped={card === choiceOne || card === choiceTwo || card.matched}
+            disabled={disabled}
+          />
         ))}
       </div>
       <p>Turns: {turns}</p>
+      <h2>About Us</h2>
+      <Gameover />
+      <p className="AboutHeader">
+        We hope you enjoyed our game! This app was developed by:
+      </p>
     </div>
   );
 }
