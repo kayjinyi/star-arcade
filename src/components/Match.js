@@ -101,34 +101,35 @@ function Match() {
   }, []);
 
   return (
-    <div className="Match">
-      <h1>TechMatch</h1>
-      <button className="matchBtn" id="restartBtn" onClick={shuffleCards}>
-        Restart🎲
-      </button>
-      <button onClick={howtoplay} className="matchBtn" id="howtoplayBtn">
-        ?
-      </button>
+    <>
+      <div className="Match">
+        <h1>TechMatch</h1>
+        <button className="matchBtn" id="restartBtn" onClick={shuffleCards}>
+          Restart🎲
+        </button>
+        <button onClick={howtoplay} className="matchBtn" id="howtoplayBtn">
+          ?
+        </button>
 
-      <div className="card-grid">
-        {cards.map((card) => (
-          <SinggleCard
-            key={card.id}
-            card={card}
-            handleChoice={handleChoice}
-            flipped={card === choiceOne || card === choiceTwo || card.matched}
-            disabled={disabled}
-          />
-        ))}
+        <div className="card-grid">
+          {cards.map((card) => (
+            <SinggleCard
+              key={card.id}
+              card={card}
+              handleChoice={handleChoice}
+              flipped={card === choiceOne || card === choiceTwo || card.matched}
+              disabled={disabled}
+            />
+          ))}
+        </div>
+        <p>Turns: {turns}</p>
+        <h2>About Us</h2>
       </div>
-      <p>Turns: {turns}</p>
-      <h2>About Us</h2>
       <Gameover score={turns} />
 
-      <p className="AboutHeader">
-        We hope you enjoyed our game! This app was developed by:
-      </p>
-    </div>
+      {/* <p className="AboutHeader">
+      </p> */}
+    </>
   );
 }
 

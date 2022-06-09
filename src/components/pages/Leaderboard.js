@@ -5,6 +5,7 @@ import ScorePost from "../ScorePost";
 
 function Leaderboard() {
   const [scores, setScores] = useState([]);
+  // let rankNum = 0;
   const getScores = async () => {
     try {
       const res = await api.getScores();
@@ -37,13 +38,14 @@ function Leaderboard() {
       <table className="ScoreTable">
         <thead>
           <tr className="ScoreHeader">
-            <th>Rank</th>
+            {/* <th>Rank</th> */}
             <th>Name</th>
             <th>Score</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+          {/* <td>{rankNum++}</td> */}
             {scores.map((scores) => (
               <ScorePost scorePost={scores}></ScorePost>
             ))}

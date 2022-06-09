@@ -18,8 +18,7 @@ function Gameover({ score }) {
           type="text"
           placeholder="username"
         />
-
-        <button onSubmit={api.createUser({ username, score })} name="saveScore">
+        <button onClick={() => api.createUser({ username, score })} name="saveScore">
           Save Score
         </button>
       </form>
