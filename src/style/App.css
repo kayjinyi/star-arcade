@@ -1,8 +1,13 @@
 .App {
     height: 100vh;
     overflow: hidden;
+    /* display: flex;
+    flex-wrap: wrap; */
+    
  ;
 }
+
+
 
 @keyframes animStar {
     from {

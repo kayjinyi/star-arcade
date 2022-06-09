@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import Match from './components/Match';
 import Flappy from './components/Flappy';
 import Dinorun from './components/Dinorun';
+import { CustomCursor } from './components/CustomCursor/WarpCursor';
 import  { api } from "./util/api"
 import './style/App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
@@ -12,14 +13,15 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
-  
+  // const [warpMode, setWarpMode] = useState(false)
 
   return (
     <div className="App">
+      {/* <CustomCursor/> */}
       <div className='BGAnimation' >
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
       </div>
       <BrowserRouter>
           <Navigation />
