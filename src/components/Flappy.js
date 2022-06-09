@@ -4,46 +4,74 @@ import Bird from "./flappy/Bird";
 import Obstacles from "./flappy/Obstacles";
 import Gameover from "./Gameover";
 
-// TODO: TouchableWithoutFeedback in ReactNative for mobile (onPress={jump})
+const BIRD_SIZE = 60
+const GAME_WIDTH = 500
+const GAME_HEIGHT = 500
+const GRAVITY = 6
+const JUMP_HEIGHT = 100
+const OBSTACLE_WIDTH = 40
+const GAP = BIRD_SIZE * 4
 
 function Flappy() {
-  const screenWidth = 1225;
-  const screenHeight = 500;
-  const birdLeft = screenWidth / 2;
-  const [birdBottom, setBirdBottom] = useState(screenHeight / 2);
-  const [obstaclesLeft, setObstaclesLeft] = useState(screenWidth);
-  const [obstaclesLeftB, setObstaclesLeftB] = useState(
-    screenWidth + screenWidth / 2
-  );
-  const [obstaclesNegHeight, setObstaclesNegHeight] = useState(0);
-  const [obstaclesNegHeightB, setObstaclesNegHeightB] = useState(0);
-  const obstacleWidth = 60;
-  const obstacleHeight = 300;
-  const gap = 200;
-  const gravity = 3;
-  let gameTimerId;
-  let obstaclesLeftTimerId;
-  let obstaclesLeftTimerIdB;
-  const [flappyScore, setFlappyScore] = useState(0);
-  const [isGameOver, setIsGameOver] = useState(false);
+    const [birdPosition, setBirdPosition] = useState(GAME_HEIGHT/2);
+    const [gameHasStarted, setGameHasStarted] = useState(false)
+    const [obstacleHeight, setObstacleHeight] = useState(200);
+    const [obstacleLeft, setObstacleLeft] = useState(GAME_WIDTH - OBSTACLE_WIDTH)
+    const [score, setScore] = useState(0)
 
-  // start bird falling
-  useEffect(() => {
-    if (birdBottom > 0) {
-      gameTimerId = setInterval(() => {
-        setBirdBottom((birdBottom) => birdBottom - gravity);
-      }, 30);
+    const bottomObstacleHeight = GAME_HEIGHT - GAP - obstacleHeight
 
-      return () => {
-        clearInterval(gameTimerId);
-      };
-    }
-  }, [birdBottom]);
+    useEffect(() => {
+        let timeId
 
-  const jump = () => {
-    if (!isGameOver && birdBottom < screenHeight) {
-      setBirdBottom((birdBottom) => birdBottom + 50);
-      console.log("jumped");
+        if(gameHasStarted && birdPosition < GAME_HEIGHT-BIRD_SIZE) {
+            timeId = setInterval(() => {
+                setBirdPosition(birdPosition => birdPosition + GRAVITY)
+            }, 30)
+        }
+
+        return () => clearInterval(timeId);
+    }, [birdPosition, gameHasStarted]);
+
+    useEffect(() => {
+        let obstacleId
+        if(gameHasStarted && obstacleLeft >= -OBSTACLE_WIDTH) {
+            obstacleId = setInterval(() => {
+                setObstacleLeft(obstacleLeft => obstacleLeft-5)
+            }, 30)
+
+            return () => clearInterval(obstacleId)
+        }
+        else {
+            setObstacleLeft(GAME_WIDTH - OBSTACLE_WIDTH)
+            setObstacleHeight(Math.floor(Math.random() * (GAME_HEIGHT - GAP)));
+        }
+        setScore((score) => score+1)
+    }, [gameHasStarted, obstacleLeft])
+
+    useEffect(() => {
+        const hasCollidedWithTopObstacle = birdPosition >= 0 && birdPosition < obstacleHeight;
+        const hasCollidedWithBottomObstacle = birdPosition <= 500 && birdPosition >= 500 - bottomObstacleHeight;
+        if (
+            obstacleLeft >= 0 &&
+            obstacleLeft <= OBSTACLE_WIDTH &&
+            (hasCollidedWithTopObstacle || hasCollidedWithBottomObstacle)
+        ) {
+            setGameHasStarted(false)
+            
+        }
+    }, [birdPosition, obstacleHeight, bottomObstacleHeight, obstacleLeft])
+
+    const handleClick = () => {
+        let newBirdPosition = birdPosition - JUMP_HEIGHT
+        if (!gameHasStarted) {
+            setScore(0)
+            setGameHasStarted(true)
+        } else if(newBirdPosition < 0) {
+            setBirdPosition(0)
+        } else {
+            setBirdPosition(newBirdPosition)
+        }
     }
   };
 

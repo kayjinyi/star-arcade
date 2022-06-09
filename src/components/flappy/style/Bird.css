@@ -1,0 +1,14 @@
+.Bird {
+    position: absolute;
+    /* border: 5px solid blue; */
+    width: 50px;
+    height: 60px;
+    /* background-color: red; */
+}
+
+.Bird img {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* height: 60px; */
+}
