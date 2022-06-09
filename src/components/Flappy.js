@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../style/Flappy.css";
-import Bird from "./flappy/Bird";
-import Obstacles from "./flappy/Obstacles";
+import '../style/Flappy.css'
+import Bird from './flappy/Bird'
+import Obstacle from "./flappy/Obstacle";
 import Gameover from "./Gameover";
 
 const BIRD_SIZE = 60
@@ -73,93 +73,38 @@ function Flappy() {
             setBirdPosition(newBirdPosition)
         }
     }
-  };
 
-  // start first obstacles
-  useEffect(() => {
-    if (obstaclesLeft > -obstacleWidth) {
-      obstaclesLeftTimerId = setInterval(() => {
-        setObstaclesLeft((obstaclesLeft) => obstaclesLeft - 5);
-      }, 30);
-      return () => {
-        clearInterval(obstaclesLeftTimerId);
-      };
-    } else {
-      setObstaclesLeft(screenWidth);
-      setObstaclesNegHeight(-Math.random() * 100);
-      setFlappyScore((flappyScore) => flappyScore + 1);
-    }
-  }, [obstaclesLeft]);
-
-  // start second obstacles
-  useEffect(() => {
-    if (obstaclesLeftB > -obstacleWidth) {
-      obstaclesLeftTimerIdB = setInterval(() => {
-        setObstaclesLeftB((obstaclesLeftB) => obstaclesLeftB - 5);
-      }, 30);
-      return () => {
-        clearInterval(obstaclesLeftTimerIdB);
-      };
-    } else {
-      setObstaclesLeftB(screenWidth);
-      setObstaclesNegHeightB(-Math.random() * 100);
-      setFlappyScore((flappyScore) => flappyScore + 1);
-    }
-  }, [obstaclesLeftB]);
-
-  // check for collisions
-  useEffect(() => {
-    if (
-      ((birdBottom < obstaclesNegHeight + obstacleHeight + 30 ||
-        birdBottom > obstaclesNegHeight + obstacleHeight + gap - 30) &&
-        obstaclesLeft > screenWidth / 2 - 30 &&
-        obstaclesLeft < screenWidth / 2 + 30) ||
-      ((birdBottom < obstaclesNegHeightB + obstacleHeight + 30 ||
-        birdBottom > obstaclesNegHeightB + obstacleHeight + gap - 30) &&
-        obstaclesLeftB > screenWidth / 2 - 30 &&
-        obstaclesLeftB < screenWidth / 2 + 30)
-    ) {
-      console.log("game over");
-      gameOver();
-    }
-  });
-
-  const gameOver = () => {
-    clearInterval(gameTimerId);
-    clearInterval(obstaclesLeftTimerId);
-    clearInterval(obstaclesLeftTimerIdB);
-    setIsGameOver(true);
-  };
-
-  return (
-    <>
-      {" "}
-      {!isGameOver ? (
-        <div className="Flappy" onClick={jump}>
-          <p className="runningScore">{flappyScore}</p>
-          <Bird birdBottom={birdBottom} birdLeft={birdLeft} />
-          <Obstacles
-            obstaclesLeft={obstaclesLeft}
-            obstacleWidth={obstacleWidth}
-            obstacleHeight={obstacleHeight}
-            randomBottom={obstaclesNegHeight}
-            gap={gap}
-            color="green"
-          />
-          <Obstacles
-            obstaclesLeft={obstaclesLeftB}
-            obstacleWidth={obstacleWidth}
-            obstacleHeight={obstacleHeight}
-            randomBottom={obstaclesNegHeightB}
-            gap={gap}
-            color="yellow"
-          />
-        </div>
-      ) : (
-        <Gameover gamename="flappy" score={flappyScore}/>
-      )}
-    </>
-  );
+    return (
+        <>
+            {gameHasStarted ?
+                <div className="Flappy" onClick={handleClick}>
+                    <div className="GameBox" style={{
+                        height: GAME_HEIGHT,
+                        width: GAME_WIDTH,
+                        overflow: "hidden"
+                    }}>
+                        <Obstacle
+                            top={0}
+                            width={OBSTACLE_WIDTH}
+                            height={obstacleHeight}
+                            left={obstacleLeft}
+                        />
+                        <Obstacle
+                            top={GAME_HEIGHT - (obstacleHeight + bottomObstacleHeight)}
+                            width={OBSTACLE_WIDTH}
+                            height={bottomObstacleHeight}
+                            left={obstacleLeft}
+                        />
+                        <Bird size={BIRD_SIZE} top={birdPosition} />
+                    </div>
+                    <span style={{ color: "white" }}>Score: {score}</span>
+                </div>
+                : (
+                    <Gameover gamename="flappy" score={score} />
+                )
+            }
+        </>
+    )
 }
 
 export default Flappy;
