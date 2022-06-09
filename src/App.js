@@ -5,7 +5,7 @@ import Home from './components/pages/Home';
 import Match from './components/Match';
 import Snake from './components/Snake';
 import Flappy from './components/Flappy';
- import Dino from './components/dino/Game';
+import Dino from './components/dino/Game';
 
 
 import  { api } from "./util/api"
@@ -34,7 +34,7 @@ function App() {
           <Route path="/match" element={<Match />} />
           <Route path="/snake" element={<Snake />} />
           <Route path="/flappy" element={<Flappy />} />
-           <Route path="/dino" element={<Dinorun />} /> 
+          <Route path="/dino" element={<Dinorun />} /> 
 
 
         </Routes>
