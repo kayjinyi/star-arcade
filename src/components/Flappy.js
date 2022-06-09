@@ -116,6 +116,6 @@ function Flappy() {
                 : ""}
         </>
     )
-}
+};
 
 export default Flappy;

@@ -32,6 +32,13 @@
     background: rgba(0, 255, 255, 0.418);
     border-radius: 50px;
     text-decoration: none;
+    /* overflow: hidden; */
+    display: flex;
+     flex-wrap: wrap;
+     flex-direction: row
+    ;
+    
+    /* overflow-wrap: break-word; */
 }
 
 .Navigation ul {
@@ -97,7 +104,7 @@
 }
 
 #navbar3:hover{
-    background: url('../../public/img/portal3.gif') center/cover;
+    background: url('../../public/img/portal4.gif') center/cover;
     color: transparent;
     box-shadow: 0 0 35px #FE0000;
     transition: 2s;
