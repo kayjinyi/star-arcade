@@ -1,8 +1,8 @@
 
-const SW = require("./SW.mp3");
-const LG = require("./Legend.mp3");
-const EN = require("./Enemy.mp3");
-const GoT = require("./GoT.mp3");
+const SW = require("./assets/audios/SW.mp3");
+const LG = require("./assets/audios/Legend.mp3");
+const EN = require("./assets/audios/Enemy.mp3");
+const GoT = require("./assets/audios/GoT.mp3");
 
 exports.songsdata = [
     {

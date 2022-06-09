@@ -5,7 +5,6 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Leaderboard from './components/pages/Leaderboard'
 import Match from './components/Match'
-import Snake from './components/Snake'
 import Flappy from './components/Flappy'
 import Dinorun from './components/Dinorun'
 
@@ -21,7 +20,6 @@ function Routing () {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/leaderboard" element={<Leaderboard/>}/>
                 <Route path="/match" element={<Match/>}/>
-                <Route path="/snake" element={<Snake/>}/>
                 <Route path="/flappy" element={<Flappy/>}/>
                 <Route path="/dino" element={<Dinorun/>}/>
 

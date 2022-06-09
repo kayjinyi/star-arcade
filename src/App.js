@@ -3,17 +3,13 @@ import About from './components/pages/About';
 import Leaderboard from './components/pages/Leaderboard';
 import Home from './components/pages/Home';
 import Match from './components/Match';
-import Snake from './components/Snake';
 import Flappy from './components/Flappy';
-import Dino from './components/dino/Game';
+import Dinorun from './components/Dinorun';
 import { CustomCursor } from './components/CustomCursor/WarpCursor';
-
-
 import  { api } from "./util/api"
-
 import './style/App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Dinorun from './components/Dinorun';
+
 
 
 function App() {
@@ -34,11 +30,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/match" element={<Match />} />
-          <Route path="/snake" element={<Snake />} />
           <Route path="/flappy" element={<Flappy />} />
           <Route path="/dino" element={<Dinorun />} /> 
-
-
         </Routes>
       </BrowserRouter>
 

@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'azonixregular';
+    src: url('./fonts/azonix-webfont.woff2') format('woff2'),
+         url('./fonts/azonix-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cyberdyneregular';
+    src: url('./fonts/cyberdyne-webfont.woff2') format('woff2'),
+         url('./fonts/cyberdyne-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'earth_orbiter_extra-boldbold';
+    src: url('./fonts/earthorbiterxtrabold-webfont.woff2') format('woff2'),
+         url('./fonts/earthorbiterxtrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'space_ageregular';
+    src: url('./fonts/space_age-webfont.woff2') format('woff2'),
+         url('./fonts/space_age-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mantiniaregular';
+    src: url('./fonts/mantinia_regular.woff') format('woff2'),
+         url('./fonts/mantinia_regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'star_jediregular';
+    src: url('../style/fonts/starjedi-webfont.woff') format('woff2'),
+         url('../style/fonts/starjedi-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     --darkmain: #12263A;
     --lightmain: #1C6087;

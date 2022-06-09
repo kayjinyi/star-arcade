@@ -29,7 +29,7 @@
   font-size: 1.5rem;
   margin: 0 1rem;
   cursor: pointer;
-  background: url('./NextBtn.gif') center/cover;
+  background: url('./assets/img/NextBtn.gif') center/cover;
   border-radius: 50%;
   color: transparent;
   
@@ -37,16 +37,18 @@
 #previousBtn{
   transform: rotate(180deg);
 }
-
+#previousBtn:hover{
+  transform: rotate(0deg);
+}
 .PlayBtn {
   font-size: 2.5em;
-  background: url('./PlayBtn.gif') center/cover;
+  background: url('./assets/img/PlayBtn.gif') center/cover;
     border-radius: 50%;
     color: transparent;
   
 }
 .PlayBtn:hover, .btn_action:hover{
     color: rgb(255, 255, 255);
-    background: url("./audiosBtn.gif") center/cover;
+    background: url("./assets/img/audiosBtn.gif") center/cover;
     box-shadow: 0 0 10px white;
 }
