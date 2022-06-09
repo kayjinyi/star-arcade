@@ -1,20 +1,22 @@
 import React from "react";
 import '../../style/Flappy.css'
+import rider from './img/rocket-rider.png'
+import './style/Bird.css'
 
-export default function Bird({birdBottom, birdLeft}) {
-    const birdWidth = 50
-    const birdHeight = 60
+export default function Bird({birdBottom, birdLeft, size, top}) {
 
     return (
-        <div style={{
+        <div className="Bird" style={{
             position: 'absolute',
-            backgroundColor: 'red',
-            width: 50,
-            height: 60,
-            left: birdLeft - (birdWidth/2),
+            left: birdLeft - (size/2),
             bottom: birdBottom,
+            height: size,
+            width: size,
+            top: top,
         }}>
-        
+            <img src={rider} alt="rocket rider"/>
         </div>
+
+        
     )
 }
