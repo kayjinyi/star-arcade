@@ -1,14 +1,14 @@
 .Gameselect {
     background-color: var(--darkmain);
-    border: 10px solid var(--lightaccent);
+    border: 10px solid var(--whiteaccent);
     border-radius: 10px;
     box-shadow: 3px 3px 10px 0 var(--darkaccent);
     width: 70%;
     min-width: 500px;
-    height: 60vh;
+    /* height: 60vh; */
     min-height: 500px;
     margin-left: 2em;
-    margin-top: 1em;
+    margin-top: 4em;
 
     text-align: center;
     color: var(--whiteaccent);
@@ -17,15 +17,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    box-shadow: 0 0 25px white;
 }
 #stationTitle {
     width: 350px;
     height: auto;
 }
-/* .Gameselect h2 {
-    color: var(--lightaccent);
-    width: 100%;
-} */
 .select {
     margin-top: 0;
 }
@@ -37,8 +34,8 @@
     color: aqua;
 }
 .SelectButton {
-     width: 21%; 
-    height: 80px;
+     width: 30%; 
+    height: 35%;
     font-size: 18px;
     margin: 0 2em 1em 2em;
     position: relative;

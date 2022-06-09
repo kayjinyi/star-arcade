@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../style/Gameover.css";
 import { api } from "../util/api";
 
-function Gameover({ score }) {
+function Gameover({ score, restart }) {
   // api.createUser(props.username)
   const [username, setUsername] = useState("");
   return (
