@@ -6,6 +6,7 @@ import Match from './components/Match';
 import Snake from './components/Snake';
 import Flappy from './components/Flappy';
 import Dino from './components/dino/Game';
+import { CustomCursor } from './components/CustomCursor/WarpCursor';
 
 import  { api } from "./util/api"
 
@@ -15,14 +16,15 @@ import Dinorun from './components/Dinorun';
 
 
 function App() {
-  
+  // const [warpMode, setWarpMode] = useState(false)
 
   return (
     <div className="App">
+      {/* <CustomCursor/> */}
       <div className='BGAnimation' >
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
       </div>
       <BrowserRouter>
           <Navigation />

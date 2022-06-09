@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../style/Gameover.css";
 import { api } from "../util/api";
 
-function Gameover({ score }) {
+function Gameover({ score, restart }) {
   // api.createUser(props.username)
   const [username, setUsername] = useState("");
   return (
@@ -18,6 +18,7 @@ function Gameover({ score }) {
           type="text"
           placeholder="username"
         />
+        <span className="Score">Score: {score}</span>
 
         <button onSubmit={api.createUser({ username, score })} name="saveScore">
           Save Score
