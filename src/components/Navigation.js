@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/Navigation.css";
 import { Link } from "react-router-dom";
+import PlayAudios from "./Player/PlayAudios"
 
 function Navigation() {
   return (
@@ -10,6 +11,9 @@ function Navigation() {
           Star Arcade
         </Link>
       </h1>
+      <div className="PlayAudios">
+      <PlayAudios/>
+      </div>
       <ul>
         <li>
           <Link to="/" id="navbar1">
