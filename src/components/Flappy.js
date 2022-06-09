@@ -4,13 +4,13 @@ import Bird from './flappy/Bird'
 import Obstacle from "./flappy/Obstacle";
 import Gameover from "./Gameover";
 
-const BIRD_SIZE = 60
-const GAME_WIDTH = 500
-const GAME_HEIGHT = 500
-const GRAVITY = 6
-const JUMP_HEIGHT = 100
-const OBSTACLE_WIDTH = 40
-const GAP = BIRD_SIZE * 4
+const BIRD_SIZE = 60;
+const GAME_WIDTH = 500;
+const GAME_HEIGHT = 500;
+const GRAVITY = 6;
+const JUMP_HEIGHT = 100;
+const OBSTACLE_WIDTH = 40;
+const GAP = BIRD_SIZE * 4;
 
 function Flappy() {
     const [birdPosition, setBirdPosition] = useState(GAME_HEIGHT/2);
@@ -20,7 +20,7 @@ function Flappy() {
     const [obstacleLeft, setObstacleLeft] = useState(GAME_WIDTH - OBSTACLE_WIDTH)
     const [score, setScore] = useState(0)
 
-    const bottomObstacleHeight = GAME_HEIGHT - GAP - obstacleHeight
+  const bottomObstacleHeight = GAME_HEIGHT - GAP - obstacleHeight;
 
     useEffect(() => {
         let timeId
