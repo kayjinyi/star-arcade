@@ -32,6 +32,13 @@
     background: rgba(0, 255, 255, 0.418);
     border-radius: 50px;
     text-decoration: none;
+    /* overflow: hidden; */
+    display: flex;
+     flex-wrap: wrap;
+     flex-direction: row
+    ;
+    
+    /* overflow-wrap: break-word; */
 }
 
 .Navigation ul {
