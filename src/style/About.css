@@ -1,53 +1,49 @@
-@font-face {
-    font-family: 'mantiniaregular';
-    src: url('./fonts/mantinia_regular.woff') format('woff2'),
-         url('./fonts/mantinia_regular.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 .About {
     background-color: var(--lightmain);
     color: var(--whiteaccent);
-    border: 10px solid var(--lightaccent);
+    border: 10px solid var(--whiteaccent);
     border-radius: 10px;
     box-shadow: 3px 3px 10px 0 var(--darkaccent);
-    width: 60%;
+    width: 70%;
     min-width: 500px;
-    height: 60vh;
+    height: 55vh;
     min-height: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 4em;
     margin-bottom: 2em;
     text-align: center;
     padding: 1em;
+    box-shadow: 0 0 25px #C724B1;
+    display: flex;
+    align-items: center;
 }
 
 .Credit {
     display: flex;
+    flex-direction: column;
+}
+.Frame {
+    display: flex;
     justify-content: space-between;
-    margin: 5px;
-
 }
 
 .avatarts img {
     max-width: 200px;
-    max-height: 300px;
+    max-height: 200px;
     
 }
 .avatarts {
-    border: 4px inset  #c89403;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    border: 4px inset  #C724B1;
+    margin: 30px 2px 30px 2px;
     
 }
 .ourName{
     margin: 0;
-    font-family: 'mantiniaregular';
-    font-size: 30px;
-    color: #c89403;
+    font-family: 'earth_orbiter_extra-boldbold';
+    font-size: 20px;
     text-shadow: 2px 2px black;
+    text-transform: uppercase;
 }
 
 .About h2 {
@@ -60,13 +56,14 @@
 }
 
 .AboutHeader {
-    font-family: 'Courgette', cursive;
+    font-family: 'azonixregular';
     font-size: 25px;
+    /* margin-top: 10px; */
     
 }
 
 .AboutFooter{
-    font-family: 'Courgette', cursive;
+    font-family: 'azonixregular';
     font-size: 15px;
 
 }

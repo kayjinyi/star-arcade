@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'star_jediregular';
-    src: url('../style/fonts/starjedi-webfont.woff') format('woff2'),
-         url('../style/fonts/starjedi-webfont.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 .Navigation {
     background-color: var(--darkmain);
     width: 100%;
@@ -20,13 +14,12 @@
 }
 
 #navbarHome {
-    /* color: var(--lightaccent); */
     color: transparent;
     margin-top: 10px;
     margin-left: 30px;
-    height: 100px;
-    font-size: 70px;
-    font-family: 'star_jediregular';
+    font-size: 80px;
+    /* font-family: 'earth_orbiter_extra-boldbold'; */
+    font-family: 'cyberdyneregular';
     -webkit-text-stroke: 1px #fff;
     box-shadow: 0 0 50px aqua;
     background: rgba(0, 255, 255, 0.418);
@@ -55,7 +48,7 @@
     color: transparent;
     background: url('../../public/img/planet1.gif') center/cover;
 }
-#navbar2 {
+#navbar3 {
     display: flex;
     align-items: center;
     padding: 5px;
@@ -69,7 +62,7 @@
 }
 
 
-#navbar3 {
+#navbar2 {
     display: flex;
     align-items: center;
     padding: 5px;
@@ -89,14 +82,14 @@
     box-shadow: 0 0 35px aqua;
     transition: 2s;
 }
-#navbar2:hover{
+#navbar3:hover{
     background: url('../../public/img/portal2.gif') center/cover;
     color: transparent;
     box-shadow: 0 0 35px #f000ff;
     transition: 2s;
 }
 
-#navbar3:hover{
+#navbar2:hover{
     background: url('../../public/img/portal4.gif') center/cover;
     color: transparent;
     box-shadow: 0 0 35px #FE0000;
