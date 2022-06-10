@@ -17,20 +17,24 @@
     justify-content: center;
     box-shadow: 0 0 25px white;
     align-items: center;
+    
 }
+
+.Gameselect .station {
+    
+}
+
 #stationTitle {
     width: 400px;
     height: auto;
     margin: 20px;
-    animation: slideIn 3s;
+    animation: slideIn 2s;
 }
-
-
 
 .link{
     text-decoration: none;
     color: #fff;
-    animation: slideIn 4s;
+    animation: slideIn 3s;
     
 }
 .link:hover{

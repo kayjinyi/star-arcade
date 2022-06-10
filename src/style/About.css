@@ -28,7 +28,7 @@
 .AboutHeader {
     font-family: 'azonixregular';
     font-size: 25px;
-    animation: slideUp 3s;
+
 }
 
 .Frame {
@@ -47,7 +47,6 @@
 .avatarts img {
     max-width: 200px;
     max-height: 200px;
-    animation: slideUp 6s;
 }
 
 .ourName{
