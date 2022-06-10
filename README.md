@@ -101,6 +101,8 @@ NPM Packages
 ## Link
 [Github Repo](https://github.com/kayjinyi/cool-game)
 
+[Github Backend Repo](https://github.com/kayjinyi/backendrepo)
+
 [Deploy](https://kooler-games.herokuapp.com/)
 
 ## Contributing
