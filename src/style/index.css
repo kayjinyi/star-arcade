@@ -46,6 +46,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 :root {
     --darkmain: #12263A;
     --lightmain: #1C6087;
@@ -74,6 +75,30 @@ body {
     padding: 5px;
     color: var(--whiteaccent);
     background-color: var(--lightaccent);
+}
+@keyframes slideIn {
+    from {
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+@keyframes slideDown {
+    from {
+        margin-top: -100%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
+@keyframes slideUp {
+    from {
+        margin-bottom: -100%;
+    }
+    to{
+        margin-bottom: 0%;
+    }
 }
 
 @media screen and (max-width: 480px){

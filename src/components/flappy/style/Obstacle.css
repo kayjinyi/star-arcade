@@ -1,5 +1,6 @@
 .Obstacle {
     position: relative;
+    border-radius: 10px;
     background-image: url('../img/asteroid.png');
     background-position: center center;
     background-repeat: repeat;
@@ -10,5 +11,4 @@
 
 .Obstacle img {
     width: 40px;
-
 }
