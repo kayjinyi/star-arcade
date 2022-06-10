@@ -60,7 +60,7 @@ THEN the developers are taken to the leaderboard page and presented with existin
 ## Mock-Up
 The following image shows the web application's appearance:
 
-<img src="./assets/">
+<img src="./src/Assets/Deploy/S.A.01.gif">
 
 ## Installation
 
@@ -87,6 +87,8 @@ NPM Packages
 - [Socket.io](https://momentjs.com/)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [Env Var](https://www.npmjs.com/package/env-var)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Sass](https://sass-lang.com/)
 
 
 ## License

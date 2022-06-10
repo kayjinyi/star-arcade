@@ -2,7 +2,7 @@ import Navigation from './components/Navigation';
 import About from './components/pages/About';
 import Leaderboard from './components/pages/Leaderboard';
 import Home from './components/pages/Home';
-import Match from './components/Match';
+import Match from './components/Match/Match';
 import Flappy from './components/Flappy';
 import Dinorun from './components/Dinorun';
 import { CustomCursor } from './components/CustomCursor/WarpCursor';

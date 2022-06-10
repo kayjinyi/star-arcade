@@ -13,7 +13,7 @@ function About() {
           <div className="avatarts">
             <a href="https://github.com/framenolan" target="_blank">
               <img
-                src={require("../../Avatar/Astronaut9.png")}
+                src={require("../../Assets/Avatar/Astronaut9.png")}
                 alt="EldenRingCharacters"
               />
             </a>
@@ -22,7 +22,7 @@ function About() {
           <div className="avatarts">
             <a href="https://github.com/Surbhiarora3" target="_blank">
               <img
-                src={require("../../Avatar/Astronaut1.png")}
+                src={require("../../Assets/Avatar/Astronaut1.png")}
                 alt="EldenRingCharacters"
               />
             </a>
@@ -31,7 +31,7 @@ function About() {
           <div className="avatarts">
             <a href="https://github.com/kayjinyi" target="_blank">
               <img
-                src={require("../../Avatar/Astronaut6.png")}
+                src={require("../../Assets/Avatar/Astronaut6.png")}
                 alt="EldenRingCharacters"
               />
             </a>
@@ -40,7 +40,7 @@ function About() {
           <div className="avatarts">
             <a href="https://github.com/kimester" target="_blank">
               <img
-                src={require("../../Avatar/Astronaut8.png")}
+                src={require("../../Assets/Avatar/Astronaut8.png")}
                 alt="EldenRingCharacters"
               />
             </a>
@@ -49,7 +49,7 @@ function About() {
           <div className="avatarts">
             <a href="https://github.com/minhkhoinguy" target="_blank">
               <img
-                src={require("../../Avatar/Astronaut2.png")}
+                src={require("../../Assets/Avatar/Astronaut2.png")}
                 alt="EldenRingCharacters"
               />
             </a>

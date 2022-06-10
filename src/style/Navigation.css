@@ -13,26 +13,24 @@
     align-items: center;
 }
 
-#navbarHome {
+#PageTitle {
     color: transparent;
     margin-top: 10px;
     margin-left: 30px;
     font-size: 80px;
-    /* font-family: 'earth_orbiter_extra-boldbold'; */
     font-family: 'cyberdyneregular';
     -webkit-text-stroke: 1px #fff;
     box-shadow: 0 0 50px aqua;
     background: rgba(0, 255, 255, 0.418);
     border-radius: 50px;
     text-decoration: none;
-    /* overflow: hidden; */
     display: flex;
      flex-wrap: wrap;
-     flex-direction: row
-    ;
-    
-    /* overflow-wrap: break-word; */
+     flex-direction: row;
+     animation: slideDown 3s;
+   
 }
+
 
 .Navigation ul {
     list-style: none;
@@ -41,6 +39,8 @@
     gap: 20px;
     margin-right: 20px;
     align-items: center;
+    animation: slideUp 4s;
+    
 }
 
 #navbar1 {
@@ -53,7 +53,19 @@
     min-height: 40px;
     border-radius: 50%;
     color: transparent;
-    background: url('../../public/img/planet1.gif') center/cover;
+    background: url('../Assets/NavBar/planet1.gif') center/cover;
+}
+#navbar2 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    color: transparent;
+    background: url('../Assets/NavBar/planet2.gif') center/cover
 }
 #navbar3 {
     display: flex;
@@ -65,40 +77,27 @@
     min-height: 40px;
     border-radius: 50%;
     color: transparent;
-    background: url('../../public/img/blackhole.gif') center/cover;
+    background: url('../Assets/NavBar/planet3.gif') center/cover;
 }
 
 
-#navbar2 {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    border-radius: 50%;
-    font-size: 30px;
-    min-width: 40px;
-    min-height: 40px;
-    border-radius: 50%;
-    color: transparent;
-
-    background: url('../../public/img/planet2.gif') center/cover
-
-}
 #navbar1:hover{
     background: url('https://i.gifer.com/Bg2B.gif') center/cover;
     color: transparent;
     box-shadow: 0 0 35px aqua;
     transition: 2s;
 }
+#navbar2:hover{
+    background: url('../Assets/NavBar/portal2.gif') center/cover;
+    color: transparent;
+    box-shadow: 0 0 35px #FE0000;
+    transition: 2s;
+}
 #navbar3:hover{
-    background: url('../../public/img/portal2.gif') center/cover;
+    background: url('../Assets/NavBar/portal3.gif') center/cover;
     color: transparent;
     box-shadow: 0 0 35px #f000ff;
     transition: 2s;
 }
 
-#navbar2:hover{
-    background: url('../../public/img/portal4.gif') center/cover;
-    color: transparent;
-    box-shadow: 0 0 35px #FE0000;
-    transition: 2s;
-}
+

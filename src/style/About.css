@@ -17,53 +17,53 @@
     box-shadow: 0 0 25px #C724B1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .Credit {
     display: flex;
     flex-direction: column;
 }
+
+.AboutHeader {
+    font-family: 'azonixregular';
+    font-size: 25px;
+    animation: slideUp 3s;
+}
+
 .Frame {
     display: flex;
     justify-content: space-between;
 }
 
+.avatarts {
+    border: 4px inset  #C724B1;
+    background-color: #090a0f;
+    margin: 30px 10px 30px 10px;
+    border-radius: 10px;
+    
+}
+
 .avatarts img {
     max-width: 200px;
     max-height: 200px;
-    
+    animation: slideUp 6s;
 }
-.avatarts {
-    border: 4px inset  #C724B1;
-    margin: 30px 2px 30px 2px;
-    
-}
+
 .ourName{
-    margin: 0;
+    color: white;
+    margin: 10px;
     font-family: 'earth_orbiter_extra-boldbold';
-    font-size: 20px;
-    text-shadow: 2px 2px black;
-    text-transform: uppercase;
-}
-
-.About h2 {
-    font-family: 'mantiniaregular';
-    font-size: 40px;
-    color: #c89403;
-    margin-top: 0;
-    text-shadow:2px 2px black
-    ;
-}
-
-.AboutHeader {
-    font-family: 'azonixregular';
     font-size: 25px;
-    /* margin-top: 10px; */
-    
+    /* text-shadow: 2px 2px black; */
+    text-transform: uppercase;
+    border: 1px solid white;
+    /* -webkit-text-stroke: 0.4px #fff; */
+    /* background: #090a0f;*/
+    /* border-radius: 5px;  */
 }
 
 .AboutFooter{
     font-family: 'azonixregular';
     font-size: 15px;
-
 }

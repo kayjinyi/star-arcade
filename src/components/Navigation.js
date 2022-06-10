@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <nav className="Navigation">
       <h1>
-        <Link to="/" id="navbarHome">
+        <Link to="/" id="PageTitle">
           Star Arcade
         </Link>
       </h1>
@@ -16,17 +16,17 @@ function Navigation() {
       </div>
       <ul>
         <li>
-          <Link to="/" id="navbar1" title="home">
+          <Link to="/" id="navbar1" title="Home Page">
             O
           </Link>
         </li>
         <li>
-          <Link to="/leaderboard" id="navbar2" title="leaderboard">
+          <Link to="/leaderboard" id="navbar2" title="Leader Board">
             O
           </Link>
         </li>
         <li>
-          <Link to="/about" id="navbar3" title="about">
+          <Link to="/about" id="navbar3" title="About Us">
             O
           </Link>
         </li>
