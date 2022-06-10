@@ -6,7 +6,7 @@ import Match from './components/Match';
 import Snake from './components/Snake';
 import Flappy from './components/Flappy';
 // import Dino from './components/dino/Game';
- import Chat from './components/ChatW';
+//  import Chat from './components/ChatW';
 // import React, { useEffect, useRef, useState } from "react"
 // import io from "socket.io-client"
 
@@ -18,7 +18,7 @@ import './style/App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Dinorun from './components/Dinorun';
 // import Chat from './components/chat/Chat';
-import ChatW from './components/chat/ChatW';
+// import ChatW from './components/chat/ChatW';
 
 
 
@@ -46,7 +46,7 @@ function App() {
           <Route path="/dino" element={<Dinorun />} /> 
           {/* <Route path="/chat" element={<ChatW />} /> 
           <Route path="/chat" element={<Chat/>} />  */}
-          <Route path="/chat" element={<ChatW/>} /> 
+          {/* <Route path="/chat" element={<ChatW/>} />  */}
 
 
 
