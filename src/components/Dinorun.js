@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 import "../style/Dino.css";
 import Game from "./dino/Game";
 import Timer from "./dino/Timer";
-// import Character from "./dino/Character";
-// import Block from "./dino/Block";
+
 
 
 function Dinorun() {
@@ -13,13 +12,12 @@ function Dinorun() {
     const [message, setMessage] = useState("Play");
     const [time, setTime] = useState(0);
 
-    // DEfining refs to use to get the DOM element
     const block = useRef();
     const character = useRef();
 
-    // function that will turn on the animations when a player hits play
+    
     const playGame = () => {
-        // If animateBlock is false, change the state to true and set the button message to stop
+ 
         if (!animateBlock) {
             setAnimateBlock(true);
             setMessage("Stop");
@@ -29,7 +27,7 @@ function Dinorun() {
             setTime(0);
         }
     };
-    // UseEffect that will check to see if a player has died and will run the timer
+    
     useEffect(() => {
         const checkDeath = setInterval(function () {
             let characterTop = parseInt(
@@ -40,15 +38,13 @@ function Dinorun() {
             let blockLeft = parseInt(
                 window.getComputedStyle(block.current).getPropertyValue("left")
             );
-            // Calculate if the top of the block hits the left of the other block
+           
             if (blockLeft < 20 && blockLeft > 0 && characterTop >= 60) {
                 setAnimateBlock(false);
                 setMessage("Play");
                 setTime(0);
-                // alert("OOpsie you got sucked in black hole!");
+          
             }
-
-            // console.log(characterTop);
         }, 10);
 
         let interval = null;
@@ -62,7 +58,7 @@ function Dinorun() {
         return () => clearInterval(interval);
     }, [animateBlock, time, message]);
 
-    // This will tell the character to jump when the player hits the jump button
+
     const jump = () => {
         if (!animateChar) {
             setAnimateChar(true);
@@ -77,7 +73,7 @@ function Dinorun() {
             <Game
                 animateBlock={animateBlock}
                 animateChar={animateChar}
-                // Using an object to pass down multiple references
+               
                 allRefs={{ character, block }}
             ></Game>
             <Timer timer={time}></Timer>

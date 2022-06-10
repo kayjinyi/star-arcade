@@ -1,0 +1,35 @@
+.matchGameOver {
+    background-color: var(--darkmain);
+    border: 10px solid var(--lightaccent);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0 var(--darkaccent);
+    width: 400px;
+    /* min-width: 500px; */
+    height: 200px;
+    /* min-height: 500px; */
+    margin-left: 1050px;
+    margin-right: auto;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+}
+
+.Gameover h2 {
+    /* color: var(--lightaccent); */
+    
+}
+
+.matchGameOver .matchResult {
+    background-color: var(--lightaccent);
+    border: 5px solid var(--lightaccent);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 var(--darkaccent);
+    padding: 5px;
+    color: var(--whiteaccent);
+    background-color: var(--lightaccent);
+    width: 50%;
+    text-align: center;
+}

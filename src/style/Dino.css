@@ -1,16 +1,18 @@
 * {
     padding: 0;
     margin: 0;
+    
 
     
 }
 
 .game {
-    /* background-image: url('../24008-george-roush-roush-dinosaurs-vs-aliens-comics-sci-fi-dinosaur-ufo-invasion-spaceship-spacecraft-aliens-creatures-monster-2.jpg'); */
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     display: flex;
-    /* border: 1px solid rgb(113, 16, 16); */
+    flex-wrap: wrap;
+    ;
+    
 }
 
 .dino {
@@ -22,12 +24,12 @@
 }
 
 .character {
-    /* display:flex; */
+    
     position: relative;
-    width: 20px;
-    height: 55px;
+    width: 20px; 
+     height: 100px; 
     top: 480px;
-     left:10px; 
+     left:40px; 
 }
 .character-animate {
     animation-name: jump;

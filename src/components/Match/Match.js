@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Match.css";
 import SinggleCard from "./SinggleCard";
-import Gameover from "../Gameover";
+import Gameover from "../matchGameOver";
 
 const cardImages = [
   { src: "../../../img/match1.png" },
@@ -124,7 +124,10 @@ function Match() {
         </div>
         <p>Turns: {turns}</p>
       </div>
-      <Gameover score={turns} />
+      <br></br>
+      <div>
+        <Gameover score={turns} />
+      </div>
     </>
   );
 }
