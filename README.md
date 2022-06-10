@@ -22,7 +22,7 @@ Cool Game
 ## User Story
 ```
 
-* As a Star citizen, I want to have space game. 
+* As a Star citizen, I want to play some space games. 
 
 * As a user, I want to have memory games. I want to win the game when I have guessed all the cards correct，especially the cards about the tech knowlege .
 
@@ -80,7 +80,8 @@ General Technologies:
 - [Heroku](https://dashboard.heroku.com/)
 - [BootStrap](https://getuikit.com/)
 - [Node.js](https://nodejs.org/en/)
-- 
+- [React.js](https://reactjs.org/)
+
 NPM Packages
 - [Express.js](https://expressjs.com/)
 - [Sequelize](https://sequelize.org/)
@@ -91,6 +92,7 @@ NPM Packages
 - [Env Var](https://www.npmjs.com/package/env-var)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Sass](https://sass-lang.com/)
+- [React Spring](https://react-spring.io/)
 
 
 ## License
@@ -98,6 +100,8 @@ NPM Packages
 
 ## Link
 [Github Repo](https://github.com/kayjinyi/cool-game)
+
+[Github Backend Repo](https://github.com/kayjinyi/backendrepo)
 
 [Deploy](https://kooler-games.herokuapp.com/)
 

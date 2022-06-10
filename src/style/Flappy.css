@@ -1,46 +1,35 @@
 .Flappy {
     display: flex;
-    /* background-color: white; */
     align-items: center;
     justify-content: center;
     border: 5px solid black;
-    /* width: 900px; */
-    /* height: 500px; */
     margin-left: auto;
     margin-right: auto;
     position: relative;
     text-align: center;
 }
 
-/* .Flappy .Bird {
-    position: absolute;
-    background-color: red;
-    width: 50px;
-    height: 60px;
-} */
-
 .Flappy .filler {
     background-color: rgba(255, 255, 255, .1);
-    /* flex: 1; */
-    /* flex-shrink: 3; */
     min-width: 10px;
     height: 500px;
 }
 
 .Flappy .GameBox {
-    /* flex: 1; */
-    /* flex-shrink: 0; */
     width: auto;
 }
 
 .FlappyMenu {
     background-color: var(--darkmain);
-    border: 10px solid var(--lightaccent);
+    border: 2px inset  #C724B1;
     border-radius: 10px;
     box-shadow: 3px 3px 10px 0 var(--darkaccent);
     width: 20%;
+    min-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,6 +39,7 @@
 .FlappyMenu span, button {
     margin-left: 1em;
     margin-right: 1em;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 480px){

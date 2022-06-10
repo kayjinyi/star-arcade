@@ -51,7 +51,6 @@
     --darkmain: #12263A;
     --lightmain: #1C6087;
     --pagebackground: #090a0f;
-    /* --pagebackground: #8ACDEA; */
     --whiteaccent: #F5EFED;
     --darkaccent: #5A1807;
     --lightaccent: #D98324;
@@ -66,7 +65,7 @@ body {
     margin: 0;
     font-size: large;
     background-color: var(--pagebackground);
-    
+    overflow-y: scroll;
 }
 
 .btn {

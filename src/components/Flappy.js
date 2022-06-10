@@ -22,6 +22,7 @@ function Flappy() {
 
   const bottomObstacleHeight = GAME_HEIGHT - GAP - obstacleHeight;
 
+    // handle bird falling
   useEffect(() => {
     let timeId;
 
@@ -34,6 +35,7 @@ function Flappy() {
     return () => clearInterval(timeId);
   }, [birdPosition, gameHasStarted]);
 
+    // handle obstacles scrolling and score 
   useEffect(() => {
     let obstacleId;
     if (gameHasStarted && obstacleLeft >= -OBSTACLE_WIDTH) {
@@ -43,12 +45,15 @@ function Flappy() {
 
       return () => clearInterval(obstacleId);
     } else {
-      setObstacleLeft(GAME_WIDTH - OBSTACLE_WIDTH);
-      setObstacleHeight(Math.floor(Math.random() * (GAME_HEIGHT - GAP)));
+        setObstacleLeft(GAME_WIDTH - OBSTACLE_WIDTH);
+        setObstacleHeight(Math.floor(Math.random() * (GAME_HEIGHT - GAP)));
     }
-    setScore((score) => score + 1);
-  }, [gameHasStarted, obstacleLeft]);
+    
+    setScore((score) => score + 1)
 
+  }, [gameHasStarted, obstacleLeft]);
+  
+    // handle collisions
   useEffect(() => {
     const hasCollidedWithTopObstacle =
       birdPosition >= 0 && birdPosition < obstacleHeight;
@@ -59,11 +64,13 @@ function Flappy() {
       obstacleLeft <= OBSTACLE_WIDTH &&
       (hasCollidedWithTopObstacle || hasCollidedWithBottomObstacle)
     ) {
+      setScore((score) => score - 2)
       setGameHasStarted(false);
       setGameOver(true);
     }
   }, [birdPosition, obstacleHeight, bottomObstacleHeight, obstacleLeft]);
 
+    // handle bird jump and game start on click
   const handleClick = () => {
     let newBirdPosition = birdPosition - JUMP_HEIGHT;
     if (!gameHasStarted) {
@@ -77,6 +84,7 @@ function Flappy() {
     }
   };
 
+    // reset game from Restart button
   const restart = () => {
     setGameOver(false);
   };

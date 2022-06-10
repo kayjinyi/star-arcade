@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 .player_container {
-  width: 40%;
+  width: fit-content;
   border: 1px solid rgb(141, 141, 141);
   border-radius: 20px;
   color: rgb(218, 218, 218);
@@ -11,6 +11,8 @@
   background-color: black;
   padding-bottom: 0.5em;
   color: rgb(202, 202, 202);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -23,6 +25,8 @@
   font-size: inherit;
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn_action {
@@ -31,6 +35,7 @@
   cursor: pointer;
   background: url('./assets/img/NextBtn.gif') center/cover;
   border-radius: 50%;
+  border: 1px solid white;
   color: transparent;
   
 }

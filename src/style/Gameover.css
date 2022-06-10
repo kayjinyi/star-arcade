@@ -1,8 +1,8 @@
 .Gameover {
-    background-color: var(--darkmain);
-    border: 10px solid var(--lightaccent);
+    background: url('../Assets/gameoverBG.gif') center/cover;
+    border: 8px solid  var(--whiteaccent);
     border-radius: 10px;
-    box-shadow: 3px 3px 10px 0 var(--darkaccent);
+    box-shadow: 3px 3px 10px 0 #C724B1;
     width: 400px;
     height: 200px;
     display: flex;
@@ -16,37 +16,46 @@
     margin-left: -200px;
     z-index: 10;
 }
-
 .Gameover h2 {
-    color: var(--whiteaccent);   
-}
-
-.Gameover .Result {
-    background-color: var(--lightaccent);
-    border: 5px solid var(--lightaccent);
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 0 var(--darkaccent);
-    padding: 5px;
     color: var(--whiteaccent);
-    background-color: var(--lightaccent);
-    width: 50%;
-    flex-wrap: wrap;
-    text-align: center;
+    font-family: 'azonixregular';
 }
-
+.Result {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
 .Gameover input,span,button {
     margin: 1em;
 }
-
-.Gameover input {
-    border-radius: 5px;
+.Gameover span {
+    color: var(--whiteaccent);
+    background-color: var(--darkmain);
+    border: 2px inset  #C724B1;
+    border-radius: 10px;
 }
 
-.Gameover button {
-    /* border: 5px solid var(--lightaccent); */
+.Gameover input {
     border-radius: 10px;
-    /* box-shadow: 2px 2px 10px 0 var(--darkaccent); */
+    background-color: var(--darkmain);
+    border: 2px inset  #C724B1;
+    color: var(--whiteaccent);
+    font-weight: bold;
+    font-family: 'azonixregular';
+    padding: 4px;
+}
+
+.Gameover input::placeholder {
+    color: var(--whiteaccent);
+    text-align: center;
+}    
+
+.Gameover button {
+    border-radius: 10px;
     padding: 5px;
     color: var(--whiteaccent);
     background-color: var(--darkmain);
+    font-family: 'azonixregular';
+    border: 2px inset  #C724B1;
 }

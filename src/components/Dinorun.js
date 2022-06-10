@@ -47,10 +47,7 @@ function Dinorun() {
                 
         
                 alert("you lose!");
-        
-           
 
-        
                 setTime(0);
           
             }

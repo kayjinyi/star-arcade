@@ -16,7 +16,7 @@ function About() {
   const esterStyle = useAnimation(esterRef)
   const minhkoiStyle = useAnimation(minhkoiRef)
 
-  useChain([nolanRef, surbhiRef, yiRef, esterRef, minhkoiRef],[0,0.5,1,1.5,2])
+  useChain([nolanRef, surbhiRef, yiRef, esterRef, minhkoiRef],[0,0.3,.6,.9,1.2])
   
   return (
     <section className="About">
