@@ -22,13 +22,15 @@ Cool Game
 ## User Story
 ```
 
-* As a user, I want to select games I like . 
+* As a Star citizen, I want to have space game. 
 
-* As a user, I want to have memory games. I want to win the game when I have guessed all the pictures correct.
+* As a user, I want to have memory games. I want to win the game when I have guessed all the cards correct，especially the cards about the tech knowlege .
 
-* As a user, I want to have snake games to have fun. 
+* As a user, I want to have Rocket Rider games to have fun. 
 
-* As a user, I want to see top ten scores.
+* As a user, I want to have Hero jump games to have fun, when the heros successfully avoid the collioson, they get more scores. 
+
+* As a user, I want to check top ten scores.
 
 * As a user, I want to see whether I get to the Leaderboard.
 ```
