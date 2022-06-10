@@ -1,0 +1,61 @@
+.Gameover {
+    background: url('../Assets/gameoverBG.gif') center/cover;
+    border: 8px solid  var(--whiteaccent);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0 #C724B1;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    z-index: 10;
+}
+.Gameover h2 {
+    color: var(--whiteaccent);
+    font-family: 'azonixregular';
+}
+.Result {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.Gameover input,span,button {
+    margin: 1em;
+}
+.Gameover span {
+    color: var(--whiteaccent);
+    background-color: var(--darkmain);
+    border: 2px inset  #C724B1;
+    border-radius: 10px;
+}
+
+.Gameover input {
+    border-radius: 10px;
+    background-color: var(--darkmain);
+    border: 2px inset  #C724B1;
+    color: var(--whiteaccent);
+    font-weight: bold;
+    font-family: 'azonixregular';
+    padding: 4px;
+}
+
+.Gameover input::placeholder {
+    color: var(--whiteaccent);
+    text-align: center;
+}    
+
+.Gameover button {
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--whiteaccent);
+    background-color: var(--darkmain);
+    font-family: 'azonixregular';
+    border: 2px inset  #C724B1;
+}

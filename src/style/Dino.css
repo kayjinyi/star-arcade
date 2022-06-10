@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+
+    
+}
+
+.game {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    ;
+    
+}
+
+.dino {
+    display:flex;
+    background: url('../Assets/Game/ironman.gif')center/cover;
+    width: 200px;
+    height: 200px;
+     
+}
+
+.character {
+    
+    position: relative;
+    width: 20px; 
+     height: 100px; 
+    top: 480px;
+     left:40px; 
+}
+.character-animate {
+    animation-name: jump;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    0% {
+        top: 60px;
+    }
+    30% {
+        top: 20px;
+    }
+    70% {
+        top: 20px;
+    }
+    100% {
+        top: 50px;
+    }
+}
+
+.block {
+    display: flex;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: url('../Assets/Game/blackhole.gif')center/cover;
+    position: relative;
+    top: 535px;
+    left: 1175px;
+    
+}
+
+.block-animate {
+    animation-name: block;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes block {
+    0% {
+        left: 800px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+
+.divider {
+    width: 25px;
+    height: auto;
+    display: inline-block;
+}
+
+.button {
+    background-color: #d65731;
+    border: none;
+    color: rgb(246, 244, 244);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.timer {
+    color: #4caf50;
+    padding-left: 300px;
+    padding-top: 15px;
+}

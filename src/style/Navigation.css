@@ -1,0 +1,137 @@
+
+.Navigation {
+    background-color: var(--darkmain);
+    width: 100%;
+    flex-basis: 100%;
+    margin: 0;
+    height: 10vh;
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#PageTitle {
+    color: transparent;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 80px;
+    font-family: 'cyberdyneregular';
+    -webkit-text-stroke: 1px #fff;
+    box-shadow: 0 0 50px aqua;
+    background: rgba(0, 255, 255, 0.418);
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    animation: slideDown 3s;
+   
+}
+
+
+.Navigation ul {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 20px;
+    align-items: center;
+    animation: slideUp 6s, Rotate 6s;
+}
+@keyframes Rotate {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+#navbar1 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    color: transparent;
+    background: url('../Assets/NavBar/planet1.gif') center/cover;
+}
+#navbar2 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    color: transparent;
+    background: url('../Assets/NavBar/planet2.gif') center/cover
+}
+#navbar3 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    color: transparent;
+    background: url('../Assets/NavBar/planet3.gif') center/cover;
+}
+
+
+#navbar1:hover{
+    background: url('https://i.gifer.com/Bg2B.gif') center/cover;
+    color: transparent;
+    box-shadow: 0 0 35px aqua;
+    transition: 2s;
+}
+#navbar2:hover{
+    background: url('../Assets/NavBar/portal2.gif') center/cover;
+    color: transparent;
+    box-shadow: 0 0 35px #FE0000;
+    transition: 2s;
+}
+#navbar3:hover{
+    background: url('../Assets/NavBar/portal3.gif') center/cover;
+    color: transparent;
+    box-shadow: 0 0 35px #f000ff;
+    transition: 2s;
+}
+
+@media screen and (max-width: 1180px){
+    .Navigation #PageTitle{
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .Navigation {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .Navigation #PageTitle{
+        margin-bottom: 5px;
+    }
+
+    .Navigation ul {
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .Navigation #PageTitle{
+        font-size: 50px;
+    }
+}
