@@ -1,33 +1,35 @@
 * {
     padding: 0;
     margin: 0;
+    
 
     
 }
 
 .game {
-    /* background-image: url('../24008-george-roush-roush-dinosaurs-vs-aliens-comics-sci-fi-dinosaur-ufo-invasion-spaceship-spacecraft-aliens-creatures-monster-2.jpg'); */
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     display: flex;
-    /* border: 1px solid rgb(113, 16, 16); */
+    flex-wrap: wrap;
+    ;
+    
 }
 
 .dino {
     display:flex;
-    background: url('../../public/img/62a139a8df32d226159338.gif')center/cover;
+    background: url('../Assets/Game/ironman.gif')center/cover;
     width: 200px;
     height: 200px;
      
 }
 
 .character {
-    /* display:flex; */
+    
     position: relative;
-    width: 20px;
-    height: 55px;
+    width: 20px; 
+     height: 100px; 
     top: 480px;
-     left:10px; 
+     left:40px; 
 }
 .character-animate {
     animation-name: jump;
@@ -56,7 +58,7 @@
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    background: url('../../public/img/blackhole.gif')center/cover;
+    background: url('../Assets/Game/blackhole.gif')center/cover;
     position: relative;
     top: 535px;
     left: 1175px;
