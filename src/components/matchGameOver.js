@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "../style/matchGameOver.css";
 import { api } from "../util/api";
 
-function Gameover({ score, restart }) {
+function MatchGameOver({ score, restart }) {
   
   const [username, setUsername] = useState("");
   return (
     <div className="matchGameOver">
-      <h2>Game Over</h2>
+      <h2>Submit Score</h2>
       <form className="matchResult">
         <input
           onChange={(e) => {
@@ -27,4 +27,4 @@ function Gameover({ score, restart }) {
   );
 }
 
-export default Gameover;
+export default MatchGameOver;
