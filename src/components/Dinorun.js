@@ -101,7 +101,7 @@ function Dinorun() {
                 Jump
             </button>
             
- {gameOver ? <Gameover gamename="flappy" score={gameEndedTime} /> : ""}
+ {gameOver ? <Gameover gamename="Dinorun" score={gameEndedTime} /> : ""}
 
         </div>
     );
