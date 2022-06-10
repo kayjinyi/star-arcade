@@ -34,7 +34,7 @@ function Leaderboard() {
 
   return (
     <section className="Leaderboard">
-      <h2>Leaderboard</h2>
+      <img src={require('../../Assets/LeaderBoard/title.png')}/>
       <table className="ScoreTable">
         <thead>
           <tr className="ScoreHeader">

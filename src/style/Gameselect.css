@@ -6,22 +6,23 @@
     width: 70%;
     min-width: 500px;
     height: 70vh;
-    min-height: 500px;
+    min-height: 600px;
     margin-left: 2em;
     margin-top: 4em;
     text-align: center;
     color: var(--whiteaccent);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     box-shadow: 0 0 25px white;
     align-items: center;
     
+    
 }
 
-.Gameselect .station {
-    
+.Gameselect .select {
+    flex-basis: 1;
 }
 
 #stationTitle {
@@ -29,20 +30,22 @@
     height: auto;
     margin: 20px;
     animation: slideIn 2s;
+    flex-basis: 100%;
 }
 
 .link{
     text-decoration: none;
     color: #fff;
     animation: slideIn 3s;
-    
 }
+
 .link:hover{
     color: aqua;
 }
 
 .SelectButton {
-     width: 30%; 
+    width: 30%;
+    min-width: fit-content; 
     height: 40%;
     font-size: 18px;
     margin: 0 2em 1em 2em;
@@ -55,8 +58,8 @@
     padding: 20px 30px;
     transition: 0.5s;
     
-    
 }
+
 .SelectButton:hover{
     background: aqua;
     color: aqua;

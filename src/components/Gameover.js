@@ -3,7 +3,7 @@ import "../style/Gameover.css";
 import { api } from "../util/api";
 
 function Gameover({ score }) {
-  // api.createUser(props.username)
+  
   const [username, setUsername] = useState("");
   return (
     <div className="Gameover">
