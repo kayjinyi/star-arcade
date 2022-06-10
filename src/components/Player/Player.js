@@ -1,6 +1,6 @@
  import React, { useRef } from 'react'
 import './Player.css'
-import {BsFillPlayCircleFill, BsFillPauseCircleFill, BsFillSkipStartCircleFill, BsSkipEndCircleFill, BsFillSkipEndCircleFill} from 'react-icons/bs';
+import {BsFillPlayCircleFill, BsFillPauseCircleFill, BsFillSkipStartCircleFill, BsFillSkipEndCircleFill} from 'react-icons/bs';
 
 
 const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs})=> {
@@ -26,8 +26,8 @@ const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
 
   const skipBack = ()=>
   {
-    const index = songs.findIndex(x=>x.title == currentSong.title);
-    if (index == 0)
+    const index = songs.findIndex(x=>x.title === currentSong.title);
+    if (index === 0)
     {
       setCurrentSong(songs[songs.length - 1])
     }
@@ -42,9 +42,9 @@ const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
 
   const skiptoNext = ()=>
   {
-    const index = songs.findIndex(x=>x.title == currentSong.title);
+    const index = songs.findIndex(x=>x.title === currentSong.title);
 
-    if (index == songs.length-1)
+    if (index === songs.length-1)
     {
       setCurrentSong(songs[0])
     }
@@ -61,15 +61,15 @@ const Player = ({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
       <div className="title">
         <p>{currentSong.title}</p>
       </div>
-      <div className="PlayerNav">
-        <div className="PlayerNav_wrapper" onClick={checkWidth} ref={clickRef}>
-          <div className="seek_bar" style={{width: `${currentSong.progress+"%"}`}}></div>
-        </div>
-      </div>
       <div className="controls">
         <BsFillSkipStartCircleFill className='btn_action' id='previousBtn' onClick={skipBack}/>
         {isplaying ? <BsFillPauseCircleFill className='btn_action PlayBtn' onClick={PlayPause}/> : <BsFillPlayCircleFill className='btn_action PlayBtn' onClick={PlayPause}/>}
         <BsFillSkipEndCircleFill className='btn_action' onClick={skiptoNext}/>        
+      </div>
+      <div className="PlayerNav">
+        <div className="PlayerNav_wrapper" onClick={checkWidth} ref={clickRef}>
+          <div className="seek_bar" style={{width: `${currentSong.progress+"%"}`}}></div>
+        </div>
       </div>
     </div>
   

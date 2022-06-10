@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
 import "../style/Dino.css";
 import Game from "./dino/Game";
 import Timer from "./dino/Timer";
@@ -29,23 +28,23 @@ function Dinorun() {
     };
     
     useEffect(() => {
-        const checkDeath = setInterval(function () {
-            let characterTop = parseInt(
-                window
-                    .getComputedStyle(character.current)
-                    .getPropertyValue("top")
-            );
-            let blockLeft = parseInt(
-                window.getComputedStyle(block.current).getPropertyValue("left")
-            );
+        // const checkDeath = setInterval(function () {
+        //     let characterTop = parseInt(
+        //         window
+        //             .getComputedStyle(character.current)
+        //             .getPropertyValue("top")
+        //     );
+        //     let blockLeft = parseInt(
+        //         window.getComputedStyle(block.current).getPropertyValue("left")
+        //     );
            
-            if (blockLeft < 20 && blockLeft > 0 && characterTop >= 60) {
-                setAnimateBlock(false);
-                setMessage("Play");
-                setTime(0);
+        //     if (blockLeft < 20 && blockLeft > 0 && characterTop >= 60) {
+        //         setAnimateBlock(false);
+        //         setMessage("Play");
+        //         setTime(0);
           
-            }
-        }, 10);
+        //     }
+        // }, 10);
 
         let interval = null;
         if (animateBlock) {
