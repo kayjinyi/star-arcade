@@ -1,12 +1,12 @@
 export const api = {
     getScores: async function () {
-      return fetch("https://koolgamebackend.herokuapp.com/api/userscore");
+      return fetch("https://cors-anywhere.herokuapp.com/https://koolgamebackend.herokuapp.com/api/userscore");
       // return await res.json();
      
 
     },
     createUser: async function (user) {
-      return fetch("https://koolgamebackend.herokuapp.com/api/userscore", {
+      return fetch("https://cors-anywhere.herokuapp.com/https://koolgamebackend.herokuapp.com/api/userscore", {
         method: "POST",
         body: JSON.stringify(user),
         headers: {
