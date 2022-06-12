@@ -34,12 +34,12 @@ function Dinorun() {
         window.getComputedStyle(block.current).getPropertyValue("left")
       );
 
-      if (blockLeft < 20 && blockLeft > 0 && characterTop >= 60) {
+      if (blockLeft < 220 && blockLeft > 0 && characterTop >= 260) {
         setGameOver(true);
         setAnimateBlock(false);
         setMessage("Play");
 
-        alert("you lose!");
+        // alert("you lose!");
 
         setTime(0);
       }
