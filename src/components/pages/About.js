@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style/About.css";
-import {useSpring, animated, useChain, useSpringRef} from 'react-spring'
+import { useSpring, animated, useChain, useSpringRef } from "react-spring";
 import Avatar from "./Avatar";
 
 function About() {
@@ -10,14 +10,17 @@ function About() {
   const esterRef = useSpringRef();
   const minhkoiRef = useSpringRef();
 
-  const nolanStyle = useAnimation(nolanRef)
-  const surbhiStyle = useAnimation(surbhiRef)
-  const yiStyle = useAnimation(yiRef)
-  const esterStyle = useAnimation(esterRef)
-  const minhkoiStyle = useAnimation(minhkoiRef)
+  const nolanStyle = useAnimation(nolanRef);
+  const surbhiStyle = useAnimation(surbhiRef);
+  const yiStyle = useAnimation(yiRef);
+  const esterStyle = useAnimation(esterRef);
+  const minhkoiStyle = useAnimation(minhkoiRef);
 
-  useChain([nolanRef, surbhiRef, yiRef, esterRef, minhkoiRef],[0,0.3,.6,.9,1.2])
-  
+  useChain(
+    [nolanRef, surbhiRef, yiRef, esterRef, minhkoiRef],
+    [0, 0.3, 0.6, 0.9, 1.2]
+  );
+
   return (
     <section className="About">
       <div className="Credit">
@@ -84,11 +87,11 @@ const useAnimation = (ref) => {
       opacity: 1,
     },
     config: {
-      duration: 500
+      duration: 500,
     },
-    ref: ref
-  })
+    ref: ref,
+  });
   return spring;
-}
+};
 
 export default About;

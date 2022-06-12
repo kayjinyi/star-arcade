@@ -1,9 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-    
-
-    
+}
+.DinorunApp{
+    border: 2px solid #aa0505;
+    box-shadow: 0 0 10px #aa0505;
+    /* max-height: 110vh; */
 }
 
 .game {
@@ -80,27 +82,59 @@
         left: -40px;
     }
 }
-
+.dinoBtn {
+    margin-top: 550px;
+}
 
 .divider {
-    width: 25px;
+    width: 10px;
     height: auto;
     display: inline-block;
 }
 
-.button {
-    background-color: #d65731;
-    border: none;
-    color: rgb(246, 244, 244);
-    padding: 15px 32px;
+.DinorunApp .button {
+    border: 2px solid #aa0505;
+    color: #fbca03;
+    width: 80px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+    font-family: 'space_ageregular';
+    border-radius: 5px;
+}
+.DinorunApp button:hover{
+    color: #aa0505;
+    border: 2px solid #fbca03;
+    -webkit-text-stroke: 1px #fff;
+    box-shadow: 0 0 10px #fbca03;
+}
+#dinoJumpBtn {
+    background: url('../Assets/Game/ironman.png') center/cover;
+}
+#dinoPlayBtn {
+    background: url('../Assets/Game/spiderman.png') center/cover;
 }
 
 .timer {
-    color: #4caf50;
-    padding-left: 300px;
+    color: #aa0505;
+    -webkit-text-stroke: 0.3px #fbca03;
+    padding-left: 200px;
     padding-top: 15px;
+    font-family: 'cyberdyneregular';
+}
+
+@media screen and (max-width: 480px){
+    .dino {
+        width: 100px;
+        height: 100px;
+    }
+    .block {
+        width: 80px;
+        height: 80px;
+        top: 500px;
+        left: 1175px;
+    }
+
 }
