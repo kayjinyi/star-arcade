@@ -28,41 +28,45 @@
 .character {
     
     position: relative;
+    /* background: url('../Assets/Game/ironman.gif')center/cover; */
     width: 20px; 
-     height: 100px; 
+     height: 55px; 
     top: 480px;
-     left:40px; 
+     left:60px; 
 }
 .character-animate {
     animation-name: jump;
-    animation-duration: 0.8s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes jump {
     0% {
-        top: 60px;
+        top: 80px;
     }
     30% {
-        top: 20px;
+        top: 30px;
+    }
+    50% {
+        top: 40px;
     }
     70% {
-        top: 20px;
+        top: 60px;
     }
     100% {
-        top: 50px;
+        top: 80px;
     }
 }
 
 .block {
     display: flex;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: url('../Assets/Game/blackhole.gif')center/cover;
     position: relative;
-    top: 535px;
+    top: 500px;
     left: 1175px;
     
 }

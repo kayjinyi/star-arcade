@@ -34,12 +34,12 @@ function Dinorun() {
         window.getComputedStyle(block.current).getPropertyValue("left")
       );
 
-      if (blockLeft < 20 && blockLeft > 0 && characterTop >= 60) {
+      if (blockLeft < 220 && blockLeft > 0 && characterTop >= 260) {
         setGameOver(true);
         setAnimateBlock(false);
         setMessage("Play");
 
-        alert("you lose!");
+        // alert("you lose!");
 
         setTime(0);
       }
@@ -57,27 +57,6 @@ function Dinorun() {
     return () => clearInterval(interval);
   }, [animateBlock, time, message]);
 
-<<<<<<< HEAD
-    return (
-        <div className="App">
-            <Game
-                animateBlock={animateBlock}
-                animateChar={animateChar}
-               
-                allRefs={{ character, block }}
-            ></Game>
-            <Timer timer={time}></Timer>
-       
-            <button className="button" onClick={playGame}>
-                {message}
-            </button>
-            <div className="divider" />
-            <button className="button" onClick={jump}>
-                Jump
-            </button>
-            
- {gameOver ? <Gameover gamename="Dinorun" score={gameEndedTime} /> : ""}
-=======
   const jump = () => {
     if (!animateChar) {
       setAnimateChar(true);
@@ -86,7 +65,6 @@ function Dinorun() {
       setAnimateChar(false);
     }, 500);
   };
->>>>>>> a6999a33f63a2e7f87229e94a977e65f56990fd7
 
   return (
     <div className="DinorunApp">
