@@ -1,10 +1,10 @@
-# Project 3: Cool Game
+# Project 3: Star Acade
 
 ## Badge
 ![Badge](https://img.shields.io/badge/license-MIT-blue)
 
 ## Title
-Cool Game
+Star Acade
 
 ## Table of Contents
   - [Title](#title)
@@ -62,7 +62,10 @@ THEN the developers are taken to the leaderboard page and presented with existin
 ## Mock-Up
 The following image shows the web application's appearance:
 
-<img src="./src/Assets/Deploy/S.A.01.gif">
+<img src="./src/Assets/Deploy/StarAcade.gif">
+<img src="./src/Assets/Deploy/MatchGame.gif">
+<img src="./src/Assets/Deploy/RocketRiderGame.gif">
+<img src="./src/Assets/Deploy/HeroJumpGame.gif">
 
 ## Installation
 
@@ -71,6 +74,7 @@ Instructions:
 2. Open the project with your preferred text-editor, such as VS code.
 3. Prerequisite installations: Node.js, MySQL.
 4. This project includes a `package.json` file that specifies dependencies for this project, which can be installed by running the command `"npm install"`.
+5. Run the command "npm run start" to start the website on the server http://localhost:3000/
 
 ## Tech
 General Technologies: 
@@ -87,7 +91,6 @@ NPM Packages
 - [Sequelize](https://sequelize.org/)
 - [MySQL2](https://www.npmjs.com/package/mysql2)
 - [Nodemon](https://www.npmjs.com/package/nodemon) 
-- [Socket.io](https://momentjs.com/)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [Env Var](https://www.npmjs.com/package/env-var)
 - [React Icons](https://react-icons.github.io/react-icons/)
