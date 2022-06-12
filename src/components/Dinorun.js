@@ -75,16 +75,14 @@ function Dinorun() {
       ></Game>
       <Timer timer={time}></Timer>
       <div className="dinoBtn">
-      <button className="button" id='dinoPlayBtn' onClick={playGame}>
-        {message}
-      </button>
-      <div className="divider" />
-      <button className="button" id='dinoJumpBtn' onClick={jump}>
-        Jump
-      </button>
+        <button className="button" id="dinoPlayBtn" onClick={playGame}>
+          {message}
+        </button>
+        <div className="divider" />
+        <button className="button" id="dinoJumpBtn" onClick={jump}>
+          Jump
+        </button>
       </div>
-
-      
 
       {gameOver ? <Gameover gamename="flappy" score={gameEndedTime} /> : ""}
     </div>

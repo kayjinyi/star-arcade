@@ -1,70 +1,69 @@
 .matchGameOver {
-    background: url('../Assets/gameoverBG.gif') center/cover;
-    border: 8px solid  var(--whiteaccent);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px 0 #C724B1;
-    width: 400px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
+  background: url("../Assets/gameoverBG.gif") center/cover;
+  border: 8px solid var(--whiteaccent);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 0 #c724b1;
+  width: 400px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
 }
-
 .matchGameOver h2 {
-    color: var(--whiteaccent);
-    font-family: 'azonixregular';
-    
+  color: var(--whiteaccent);
+  font-family: "azonixregular";
 }
 
 .ScoreContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .matchResult {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
-.matchGameOver input,span,button {
-    margin: 1em;
+.matchGameOver input,
+span,
+button {
+  margin: 1em;
 }
 .matchGameOver span {
-    color: var(--whiteaccent);
-    background-color: var(--darkmain);
-    border: 2px inset  #C724B1;
-    border-radius: 10px;
-    font-family: 'azonixregular';
+  color: var(--whiteaccent);
+  background-color: var(--darkmain);
+  border: 2px inset #c724b1;
+  border-radius: 10px;
+  font-family: "azonixregular";
 }
 
 .matchGameOver input {
-    border-radius: 10px;
-    background-color: var(--darkmain);
-    border: 2px inset  #C724B1;
-    color: var(--whiteaccent);
-    font-weight: bold;
-    font-family: 'azonixregular';
-    padding: 4px;
+  border-radius: 10px;
+  background-color: var(--darkmain);
+  border: 2px inset #c724b1;
+  color: var(--whiteaccent);
+  font-weight: bold;
+  font-family: "azonixregular";
+  padding: 4px;
 }
 
 .matchGameOver input::placeholder {
-    color: var(--whiteaccent);
-    text-align: center;
-}    
+  color: var(--whiteaccent);
+  text-align: center;
+}
 
 .matchGameOver button {
-    border-radius: 10px;
-    padding: 5px;
-    color: var(--whiteaccent);
-    background-color: var(--darkmain);
-    font-family: 'azonixregular';
-    border: 2px inset  #C724B1;
+  border-radius: 10px;
+  padding: 5px;
+  color: var(--whiteaccent);
+  background-color: var(--darkmain);
+  font-family: "azonixregular";
+  border: 2px inset #c724b1;
 }

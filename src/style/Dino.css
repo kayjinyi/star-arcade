@@ -1,144 +1,147 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-.DinorunApp{
-    border: 2px solid #aa0505;
-    box-shadow: 0 0 10px #aa0505;
-    /* max-height: 110vh; */
+.DinorunApp {
+  border: 2px solid #aa0505;
+  box-shadow: 0 0 10px #aa0505;
 }
 
 .game {
-    width: 70%;
-    height: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    ;
-    
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .dino {
-    display:flex;
-    background: url('../Assets/Game/ironman.gif')center/cover;
-    width: 200px;
-    height: 200px;
-     
+  display: flex;
+  background: url("../Assets/Game/ironman.gif") center/cover;
+  width: 200px;
+  height: 200px;
+  animation: slideIn 2s;
+}
+.ironman {
+  animation: slideIn 3s;
+}
+.blackHole {
+  animation: slideDown 3s;
 }
 
 .character {
-    
-    position: relative;
-    /* background: url('../Assets/Game/ironman.gif')center/cover; */
-    width: 20px; 
-     height: 55px; 
-    top: 480px;
-     left:60px; 
+  position: relative;
+  width: 20px;
+  height: 55px;
+  top: 480px;
+  left: 60px;
 }
 .character-animate {
-    animation-name: jump;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  animation-name: jump;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes jump {
-    0% {
-        top: 80px;
-    }
-    30% {
-        top: 30px;
-    }
-    50% {
-        top: 40px;
-    }
-    70% {
-        top: 60px;
-    }
-    100% {
-        top: 80px;
-    }
+  0% {
+    top: 80px;
+  }
+  30% {
+    top: 30px;
+  }
+  50% {
+    top: 40px;
+  }
+  70% {
+    top: 60px;
+  }
+  100% {
+    top: 80px;
+  }
 }
 
 .block {
-    display: flex;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    background: url('../Assets/Game/blackhole.gif')center/cover;
-    position: relative;
-    top: 500px;
-    left: 1175px;
-    
+  display: flex;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: url("../Assets/Game/blackhole.gif") center/cover;
+  position: relative;
+  top: 500px;
+  left: 1500px;
+  box-shadow: 0 0 15px rgb(243, 65, 6);
 }
 
 .block-animate {
-    animation-name: block;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  animation-name: block;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes block {
-    0% {
-        left: 800px;
-    }
-    100% {
-        left: -40px;
-    }
+  0% {
+    left: 1500px;
+  }
+  100% {
+    left: -40px;
+  }
 }
 .dinoBtn {
-    margin-top: 550px;
+  margin-top: 550px;
 }
 
 .divider {
-    width: 10px;
-    height: auto;
-    display: inline-block;
+  width: 10px;
+  height: auto;
+  display: inline-block;
 }
 
 .DinorunApp .button {
-    border: 2px solid #aa0505;
-    color: #fbca03;
-    width: 80px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'space_ageregular';
-    border-radius: 5px;
+  border: 2px solid #aa0505;
+  color: #fbca03;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "space_ageregular";
+  border-radius: 5px;
 }
-.DinorunApp button:hover{
-    color: #aa0505;
-    border: 2px solid #fbca03;
-    -webkit-text-stroke: 1px #fff;
-    box-shadow: 0 0 10px #fbca03;
+.DinorunApp button:hover {
+  color: #aa0505;
+  border: 2px solid #fbca03;
+  -webkit-text-stroke: 1px #fff;
+  box-shadow: 0 0 10px #fbca03;
 }
 #dinoJumpBtn {
-    background: url('../Assets/Game/ironman.png') center/cover;
+  background: url("../Assets/Game/ironman.png") center/cover;
 }
 #dinoPlayBtn {
-    background: url('../Assets/Game/spiderman.png') center/cover;
+  background: url("../Assets/Game/spiderman.png") center/cover;
 }
 
 .timer {
-    color: #aa0505;
-    -webkit-text-stroke: 0.3px #fbca03;
-    padding-left: 200px;
-    padding-top: 15px;
-    font-family: 'cyberdyneregular';
+  color: #aa0505;
+  -webkit-text-stroke: 0.3px #fbca03;
+  padding-left: 200px;
+  padding-top: 15px;
+  font-family: "cyberdyneregular";
 }
 
-@media screen and (max-width: 480px){
-    .dino {
-        width: 100px;
-        height: 100px;
-    }
-    .block {
-        width: 80px;
-        height: 80px;
-        top: 500px;
-        left: 1175px;
-    }
-
+@media screen and (max-width: 480px) {
+  .dino {
+    width: 80px;
+    height: 80px;
+  }
+  .block {
+    width: 50px;
+    height: 50px;
+    top: 500px;
+    left: 350px;
+  }
+  .character {
+    left: 0px;
+  }
 }
