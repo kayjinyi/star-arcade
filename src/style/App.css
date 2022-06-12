@@ -1,10 +1,6 @@
 .App {
-    height: 150vh;
+    height: 120vh;
     overflow: hidden;
-    /* display: flex;
-    flex-wrap: wrap; */
-    
- 
 }
 
 ::-webkit-scrollbar {
@@ -579,4 +575,24 @@ background: none;
     16px 1650px #fff, 1021px 1075px #fff, 723px 424px #fff, 1175px 41px #fff,
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
+}
+@media screen and (max-width: 1110px){
+    .App {
+        height: 120vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .App {
+        height: 130vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .App {
+        height: 140vh;
+        overflow: hidden;
+    }
 }
