@@ -6,7 +6,10 @@ function Gameselect() {
   return (
     <section className="Gameselect">
       <div className="station">
-        <img src={require("../Assets/HomePage/GameStation.png")} id="stationTitle" />
+        <img
+          src={require("../Assets/HomePage/GameStation.png")}
+          id="stationTitle"
+        />
       </div>
       <div className="select">
         <button className="SelectButton">

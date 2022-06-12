@@ -1,106 +1,106 @@
 @font-face {
-    font-family: 'azonixregular';
-    src: url('./fonts/azonix-webfont.woff2') format('woff2'),
-         url('./fonts/azonix-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "azonixregular";
+  src: url("./fonts/azonix-webfont.woff2") format("woff2"),
+    url("./fonts/azonix-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'cyberdyneregular';
-    src: url('./fonts/cyberdyne-webfont.woff2') format('woff2'),
-         url('./fonts/cyberdyne-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "cyberdyneregular";
+  src: url("./fonts/cyberdyne-webfont.woff2") format("woff2"),
+    url("./fonts/cyberdyne-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'earth_orbiter_extra-boldbold';
-    src: url('./fonts/earthorbiterxtrabold-webfont.woff2') format('woff2'),
-         url('./fonts/earthorbiterxtrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "earth_orbiter_extra-boldbold";
+  src: url("./fonts/earthorbiterxtrabold-webfont.woff2") format("woff2"),
+    url("./fonts/earthorbiterxtrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'space_ageregular';
-    src: url('./fonts/space_age-webfont.woff2') format('woff2'),
-         url('./fonts/space_age-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "space_ageregular";
+  src: url("./fonts/space_age-webfont.woff2") format("woff2"),
+    url("./fonts/space_age-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'mantiniaregular';
-    src: url('./fonts/mantinia_regular.woff') format('woff2'),
-         url('./fonts/mantinia_regular.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "mantiniaregular";
+  src: url("./fonts/mantinia_regular.woff") format("woff2"),
+    url("./fonts/mantinia_regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'star_jediregular';
-    src: url('../style/fonts/starjedi-webfont.woff') format('woff2'),
-         url('../style/fonts/starjedi-webfont.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "star_jediregular";
+  src: url("../style/fonts/starjedi-webfont.woff") format("woff2"),
+    url("../style/fonts/starjedi-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 :root {
-    --darkmain: #12263A;
-    --lightmain: #1C6087;
-    --pagebackground: #090a0f;
-    --whiteaccent: #F5EFED;
-    --darkaccent: #5A1807;
-    --lightaccent: #D98324;
+  --darkmain: #12263a;
+  --lightmain: #1c6087;
+  --pagebackground: #090a0f;
+  --whiteaccent: #f5efed;
+  --darkaccent: #5a1807;
+  --lightaccent: #d98324;
 }
-
-/* html, body * {
-    cursor: none;
-} */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    font-size: large;
-    background-color: var(--pagebackground);
-    overflow-y: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: large;
+  background-color: var(--pagebackground);
+  overflow-y: scroll;
 }
 
 .btn {
-    border: 5px solid var(--lightaccent);
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 0 var(--darkaccent);
-    padding: 5px;
-    color: var(--whiteaccent);
-    background-color: var(--lightaccent);
+  border: 5px solid var(--lightaccent);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0 var(--darkaccent);
+  padding: 5px;
+  color: var(--whiteaccent);
+  background-color: var(--lightaccent);
 }
 @keyframes slideIn {
-    from {
-        margin-left: -100%;
-    }
-    to{
-        margin-left: 0%;
-    }
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slideInR {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
+  }
 }
 @keyframes slideDown {
-    from {
-        margin-top: -100%;
-    }
-    to{
-        margin-top: 0%;
-    }
+  from {
+    margin-top: -100%;
+  }
+  to {
+    margin-top: 0%;
+  }
 }
 @keyframes slideUp {
-    from {
-        margin-bottom: -100%;
-    }
-    to{
-        margin-bottom: 0%;
-    }
+  from {
+    margin-bottom: -100%;
+  }
+  to {
+    margin-bottom: 0%;
+  }
 }
 
-@media screen and (max-width: 480px){
-    
+@media screen and (max-width: 480px) {
 }

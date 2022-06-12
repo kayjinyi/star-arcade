@@ -1,14 +1,14 @@
 .Obstacle {
-    position: relative;
-    border-radius: 10px;
-    background-image: url('../img/asteroid.png');
-    background-position: center center;
-    background-repeat: repeat;
-    background-size: 3em;
-    width: 100%;
-    
+  position: relative;
+  border-radius: 10px;
+  background-image: url("../img/asteroid.png");
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 3em;
+  width: 100%;
+  animation: slideIn 2s;
 }
 
 .Obstacle img {
-    width: 40px;
+  width: 40px;
 }

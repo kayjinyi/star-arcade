@@ -1,136 +1,131 @@
 .Gameselect {
-    background-color: var(--darkmain);
-    border: 10px solid var(--whiteaccent);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px 0 var(--darkaccent);
-    width: 70%;
-    min-width: 500px;
-    height: 70vh;
-    min-height: 600px;
-    margin-left: 2em;
-    margin-top: 4em;
-    text-align: center;
-    color: var(--whiteaccent);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-shadow: 0 0 25px white;
-    align-items: center;
-    
-    
+  background-color: var(--darkmain);
+  border: 10px solid var(--whiteaccent);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 0 var(--darkaccent);
+  width: 70%;
+  min-width: 500px;
+  height: 70vh;
+  min-height: 600px;
+  margin-left: 2em;
+  margin-top: 4em;
+  text-align: center;
+  color: var(--whiteaccent);
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 0 25px white;
+  align-items: center;
 }
 
 .Gameselect .select {
-    flex-basis: 1;
+  flex-basis: 1;
 }
 
 #stationTitle {
-    width: 400px;
-    height: auto;
-    margin: 20px;
-    animation: slideIn 2s;
-    flex-basis: 100%;
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  animation: slideIn 2s;
+  flex-basis: 100%;
 }
 
-.link{
-    text-decoration: none;
-    color: #fff;
-    animation: slideIn 3s;
+.link {
+  text-decoration: none;
+  color: #fff;
+  animation: slideIn 3s;
 }
 
-.link:hover{
-    color: aqua;
+.link:hover {
+  color: aqua;
 }
 
 .SelectButton {
-    width: 30%;
-    min-width: fit-content; 
-    height: 40%;
-    font-size: 18px;
-    margin: 0 2em 1em 2em;
-    position: relative;
-    background: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-weight: 400;
-    padding: 20px 30px;
-    transition: 0.5s;
-    
+  width: 30%;
+  min-width: fit-content;
+  height: 40%;
+  font-size: 18px;
+  margin: 0 2em 1em 2em;
+  position: relative;
+  background: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 400;
+  padding: 20px 30px;
+  transition: 0.5s;
 }
 
-.SelectButton:hover{
-    background: aqua;
-    color: aqua;
-    letter-spacing: 1px;
-    box-shadow: 0 0 30px aqua;
-    transition: 2s;
+.SelectButton:hover {
+  background: aqua;
+  color: aqua;
+  letter-spacing: 1px;
+  box-shadow: 0 0 30px aqua;
+  transition: 2s;
 }
 
 .SelectButton:before {
-    content: '';
-    position: absolute;
-    inset: 2px;
-    background: #27282c;
-    background: url('../Assets/HomePage/SelectBG.jpg') center/cover;
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+  background: url("../Assets/HomePage/SelectBG.jpg") center/cover;
 }
 
 .SelectButton span {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .SelectButton i {
-    position: absolute;
-    inset: 0;
-    display: block;
+  position: absolute;
+  inset: 0;
+  display: block;
 }
-.SelectButton i::before{
-    content: '';
-    position: absolute;
-    top: -25px;
-    left: 90%;
-    width: 35px;
-    height: 35px;
-    background: url('../Assets/HomePage/TRAstronauts.png') center/cover;
-    transform: translateX(-50%);
-    transition: 0.5s;
+.SelectButton i::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 90%;
+  width: 35px;
+  height: 35px;
+  background: url("../Assets/HomePage/TRAstronauts.png") center/cover;
+  transform: translateX(-50%);
+  transition: 0.5s;
 }
 
 .SelectButton:hover i::before {
-    width: 35px;
-    left: 10%;
-    background: url('../Assets/HomePage/TLAstronauts.png') center/cover;
-    transform: translateX(-50%);
+  width: 35px;
+  left: 10%;
+  background: url("../Assets/HomePage/TLAstronauts.png") center/cover;
+  transform: translateX(-50%);
 }
 
-.SelectButton i::after{
-    content: '';
-    position: absolute;
-    bottom: -13px;
-    left: 10%;
-    width: 40px;
-    height: 40px;
-    background: url('../Assets/HomePage/BLAstronauts.png') center/cover;
-    transition: 0.5s;
-    transform: translateX(-50%);
-    border-radius: 50%;
+.SelectButton i::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  background: url("../Assets/HomePage/BLAstronauts.png") center/cover;
+  transition: 0.5s;
+  transform: translateX(-50%);
+  border-radius: 50%;
 }
 .SelectButton:hover i::after {
-    background: url('../Assets/HomePage/BRAstronauts.png') center/cover;
-    width: 40px;
-    left: 90%;
+  background: url("../Assets/HomePage/BRAstronauts.png") center/cover;
+  width: 40px;
+  left: 90%;
 }
-@media screen and (max-width: 700px){
-    .Gameselect{
-        min-width: 300px;
-        margin: 4em 2em 4em 2em;
-    }
-    #stationTitle {
-        width: 300px;
-    }
-    .SelectButton {
-        font-size: 12px;
-    }
+@media screen and (max-width: 700px) {
+  .Gameselect {
+    min-width: 300px;
+    margin: 4em 2em 4em 2em;
+  }
+  #stationTitle {
+    width: 300px;
+  }
+  .SelectButton {
+    font-size: 12px;
+  }
 }

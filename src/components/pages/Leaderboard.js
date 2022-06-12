@@ -10,31 +10,29 @@ function Leaderboard() {
     try {
       const res = await api.getScores();
       const scorePosts = await res.json();
-      const newScore = [ ...scorePosts];
-    console.log(newScore);
+      const newScore = [...scorePosts];
+      console.log(newScore);
 
-    // Call setBucket to update state with our new set of bucket list items
-    setScores(newScore);
-    //   setScores(scorePosts);
+      // Call setBucket to update state with our new set of bucket list items
+      setScores(newScore);
+      //   setScores(scorePosts);
     } catch (err) {
       console.error(err);
     }
   };
   useEffect(() => {
     getScores();
-  }, [] );
+  }, []);
 
-//   const {
-//     username = '',
-//     score = '',
-   
-//   } = scores;
+  //   const {
+  //     username = '',
+  //     score = '',
 
-  
+  //   } = scores;
 
   return (
     <section className="Leaderboard">
-      <img src={require('../../Assets/LeaderBoard/title.png')}/>
+      <img src={require("../../Assets/LeaderBoard/title.png")} />
       <table className="ScoreTable">
         <thead>
           <tr className="ScoreHeader">
@@ -45,7 +43,7 @@ function Leaderboard() {
         </thead>
         <tbody>
           <tr>
-          {/* <td>{rankNum++}</td> */}
+            {/* <td>{rankNum++}</td> */}
             {scores.map((scores) => (
               <ScorePost scorePost={scores}></ScorePost>
             ))}

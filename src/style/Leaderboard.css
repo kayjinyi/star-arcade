@@ -1,62 +1,62 @@
 .Leaderboard {
-    background-color: var(--lightmain);
-    background: url('../Assets/LeaderBoard/LeaderboardBG.png') center/cover;
-    color: var(--whiteaccent);
-    border: 10px solid var(--whiteaccent);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px 0 var(--darkaccent);
-    width: 60%;
-    min-width: 500px;
-    height: 70vh;
-    min-height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    text-align: center;
-    padding: 1em;
-    box-shadow: 0 0 25px #D22730;
-    animation: LBBackground 6s;
+  background-color: var(--lightmain);
+  background: url("../Assets/LeaderBoard/LeaderboardBG.png") center/cover;
+  color: var(--whiteaccent);
+  border: 10px solid var(--whiteaccent);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 0 var(--darkaccent);
+  width: 60%;
+  min-width: 500px;
+  height: 70vh;
+  min-height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 0 25px #d22730;
+  animation: LBBackground 6s;
 }
-@keyframes LBBackground{
-    0% {
-        background: url('../Assets/LeaderBoard/LeaderboardBG.gif') center/cover; ;
-    }
+@keyframes LBBackground {
+  0% {
+    background: url("../Assets/LeaderBoard/LeaderboardBG.gif") center/cover;
+  }
 }
 .Leaderboard img {
-    width: 400px;
-    height: auto;
-    text-align: center;
+  width: 400px;
+  height: auto;
+  text-align: center;
 }
 .Leaderboard table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    width: 80%;
-    background-color: var(--darkmain);
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: var(--darkmain);
 }
 .Leaderboard .ScoreHeader {
-    border: 0px solid var(--lightaccent);
-    border-radius: 10px;
+  border: 0px solid var(--lightaccent);
+  border-radius: 10px;
 }
 .Leaderboard thead {
-    background-color: var(--lightaccent);
+  background-color: var(--lightaccent);
 }
 .Leaderboard thead th {
-    padding: 10px;
+  padding: 10px;
 }
 .Leaderboard tr {
-    border-bottom: 1px solid var(--lightaccent);
+  border-bottom: 1px solid var(--lightaccent);
 }
 .Leaderboard td {
-    padding: 4px;
+  padding: 4px;
 }
-@media screen and (max-width: 700px){
-    .Leaderboard {
-        min-width: 300px;
-        height: 80vh;
-    }
-    .Leaderboard img {
-        width: 280px;
-    }
+@media screen and (max-width: 700px) {
+  .Leaderboard {
+    min-width: 300px;
+    height: 80vh;
+  }
+  .Leaderboard img {
+    width: 280px;
+  }
 }

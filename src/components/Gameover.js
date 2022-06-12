@@ -3,7 +3,6 @@ import "../style/Gameover.css";
 import { api } from "../util/api";
 
 function Gameover({ score }) {
-  
   const [username, setUsername] = useState("");
   return (
     <div className="Gameover">
@@ -19,7 +18,10 @@ function Gameover({ score }) {
           placeholder="username"
         />
         <span>Score: {score}</span>
-        <button onClick={() => api.createUser({ username, score })} name="saveScore">
+        <button
+          onClick={() => api.createUser({ username, score })}
+          name="saveScore"
+        >
           Save Score
         </button>
       </form>
