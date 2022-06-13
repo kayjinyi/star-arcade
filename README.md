@@ -75,8 +75,9 @@ Instructions:
 3. Prerequisite installations: Node.js, MySQL.
 4. This project includes a `package.json` file that specifies dependencies for this project, which can be installed by running the command `"npm install"`.
 5. Run the command "npm run start" to start the website on the server http://localhost:3000/
-6. Because of some cors issues. In order to get the  You will have to go to the leader board to show, you will have to navigate to the leaderboard, 
-then to the dev tools and click on https://cors-anywhere.herokuapp.com/https://koolgamebackend.herokuapp.com/api/userscore. If this link does not redirect you to the page please copy the link and open it in another tab. Lastly please click on the Request Temporary Access to the demo server.
+6. Because of some cors issues. In order to get the leaderboard to show. You will have navigate to the leaderboard, 
+then in dev tools click on "https://cors-anywhere.herokuapp.com/https://koolgamebackend.herokuapp.com/api/userscore."
+ If this link does not redirect you to the page please copy the link and open it in another tab, lastly click on the Request Temporary Access to the demo server.
 ## Tech
 General Technologies: 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
